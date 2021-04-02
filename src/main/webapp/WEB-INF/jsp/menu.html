@@ -1,9 +1,70 @@
-<div class="menu">
-	<div class="dropdown">
-	  <button class="dropbtn">Alumnos</button>
-	  <div class="dropdown-content">
-	  <a href="http://localhost:8080/libreApp/#">Listar Alumnos</a>
-	  </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>libreApp - Conoce el Software</title>
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+	<!--  Título  -->
+	<div class="jumbotron text-center" style="margin-bottom:0">
+		<h1>libreApp Library</h1>
+		<p>Conozca el mundo del Open Source</p>
 	</div>
 
-</div>
+	<!--  MENÚ  -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			
+			<a href="#" class="navbar-brand">
+				<img src="https://ih1.redbubble.net/image.433687211.8335/flat,550x550,075,f.u1.jpg" alt="libreApp-logo" width="50" height="50"><span class="logo-title">libreApp Menu</span></img>
+			</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mi-navbar" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="mi-navbar">
+				<ul class="navbar-nav mr-auto"> 
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost:8080/libreApp/inicio">Inicio</a> <!-- Inicio -->
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" > <!-- Categorias -->
+							Categorias
+						</a>
+						<div class="dropdown-menu">
+							<a href="http://localhost:8080/libreApp/categorias/crear" class="dropdown-item">Crear</a>
+							<a href="http://localhost:8080/libreApp/categorias/buscar" class="dropdown-item">Buscar</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" > <!-- Comentarios -->
+							Comentarios
+						</a>
+						<div class="dropdown-menu">
+							<a href="http://localhost:8080/libreApp/comentarios/crear" class="dropdown-item">Crear</a>
+							<a href="http://localhost:8080/libreApp/comentarios/buscar" class="dropdown-item">Buscar</a>
+							<a href="http://localhost:8080/libreApp/comentarios/borrar" class="dropdown-item">Borrar</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost:8080/libreApp/contacto">Contacto</a> <!-- Contacto -->
+					</li>
+				</ul>
+				
+				<button class="btn btn-primary my-s my-sm-0" onclick="window.location.href='http://localhost:8080/libreApp/'">Bienvenido</button>
+			</div>
+		</div>
+	</nav>
+
+</body>
+
+</html>
