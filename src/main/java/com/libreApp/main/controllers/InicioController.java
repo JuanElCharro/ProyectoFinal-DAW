@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class InicioController {
 	@GetMapping(value = "inicio")
-	public String FormularioListadoAlumnos(ModelMap model) {
+	public String InicioController(ModelMap model) {
 		return "vistas/inicio/inicio";
 	}
 }
