@@ -15,15 +15,15 @@
                 <link rel="stylesheet" href="css/menu.css">
 
                 <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+                <script type="text/javascript" th:src="@{/vue/vue.js}"></script>
 
-                <script th:src="@{/vue/vue.js}"></script>
             </head>
 
             <body>
                 <header>
 
                 </header>
-                <%@include file="menu.html" %>
+                <%@include file="../jsp/vistas/inicio/bienvenido.jsp" %>
 
             </body>
 

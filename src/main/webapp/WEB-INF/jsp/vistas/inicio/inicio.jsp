@@ -19,7 +19,7 @@
 
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
-	<script th:src="@{/vue/vue.js}"></script>
+	
 </head>
 
 <body>
