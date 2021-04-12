@@ -80,9 +80,9 @@
                                 <form action="http://localhost:8080/libreApp/encuestalenguaje" method="post"
                                     id="formulario">
                                     <label>Lenguaje de programacion favorito:</label>
-                                    <select name="lenguajes" form="formulario">
+                                    <select name="encuesta_lenguaje" form="formulario">
                                         <c:forEach items="${listaLenguajes}" var="lenguaje">
-                                            <option value="${lenguaje.id}"> ${lenguaje.descripcion} </option>
+                                            <option value="${encuesta_lenguaje.id}"> ${encuesta_lenguaje.lenguaje} </option>
                                         </c:forEach>
                                     </select>
                                     <label for="razon">Breve razon de su eleccion:</label>
