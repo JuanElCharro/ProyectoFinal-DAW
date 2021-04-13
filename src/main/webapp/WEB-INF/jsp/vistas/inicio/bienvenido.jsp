@@ -78,20 +78,22 @@
 
                             <!-- VUE -->
                             <div id="app">
+                                <h1>{{ info }}</h1>
                                 <h2>Encuesta a programadores</h2>
                                 <div class="form">
                                     <label>Lenguaje de programacion favorito:</label>
                                     <select v-model="seleccionado">
                                         <option v-for="(lenguaje, index) in lenguajes" :key="index">{{lenguaje.nombre}}</option>
                                     </select>
-                                    <label>Breve razon de su eleccion:</label>
+                                    <label>Breve razon de su eleccion: </label>
                                     <input type="text" id="razon" name="razon" placeholder="Lo mas breve posible..">
-                                    <input type="submit" value="Enviar">
+                                    <button>Enviar</button> 
                                 </div>
                             </div>
                             <script>
                                 app.mount("#app");
                             </script>
+
                         </div>
                     </div>
 

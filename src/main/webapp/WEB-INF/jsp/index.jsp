@@ -15,8 +15,12 @@
                 <link rel="stylesheet" href="css/menu.css">
                 <link rel="stylesheet" href="css/formularios.css">
 
+                <!-- VUE -->
                 <script src="https://unpkg.com/vue@next"></script>
                 <script src="vue/vue.js"></script>
+
+                <!-- AXIOS -->
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
             </head>
 
