@@ -15,17 +15,13 @@
                 <link rel="stylesheet" href="css/menu.css">
                 <link rel="stylesheet" href="css/formularios.css">
 
-                <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-                <script type="text/javascript" th:src="@{/vue/vue.js}"></script>
+                <script src="https://unpkg.com/vue@next"></script>
+                <script src="vue/vue.js"></script>
 
             </head>
 
             <body>
-                <header>
-
-                </header>
                 <%@include file="../jsp/vistas/inicio/bienvenido.jsp" %>
-
             </body>
 
             </html>

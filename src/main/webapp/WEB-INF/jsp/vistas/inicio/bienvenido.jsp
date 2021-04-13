@@ -75,21 +75,23 @@
                                 crear un espacio de recopilacion para los usuarios, sean del campo profesional que sean.
                             </p>
                             <br>
-                            <h2>Encuesta para programadores:</h2>
-                            <div class="form">
-                                <form action="http://localhost:8080/libreApp/encuestalenguaje" method="post"
-                                    id="formulario">
+
+                            <!-- VUE -->
+                            <div id="app">
+                                <h2>Encuesta a programadores</h2>
+                                <div class="form">
                                     <label>Lenguaje de programacion favorito:</label>
-                                    <select name="encuesta_lenguaje" form="formulario">
-                                        <c:forEach items="${listaLenguajes}" var="lenguaje">
-                                            <option value="${encuesta_lenguaje.id}"> ${encuesta_lenguaje.lenguaje} </option>
-                                        </c:forEach>
+                                    <select v-model="seleccionado">
+                                        <option v-for="(lenguaje, index) in lenguajes" :key="index">{{lenguaje.nombre}}</option>
                                     </select>
-                                    <label for="razon">Breve razon de su eleccion:</label>
+                                    <label>Breve razon de su eleccion:</label>
                                     <input type="text" id="razon" name="razon" placeholder="Lo mas breve posible..">
                                     <input type="submit" value="Enviar">
-                                </form>
+                                </div>
                             </div>
+                            <script>
+                                app.mount("#app");
+                            </script>
                         </div>
                     </div>
 
