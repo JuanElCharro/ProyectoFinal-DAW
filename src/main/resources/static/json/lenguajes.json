@@ -1,56 +1,19 @@
 {
   "lenguajes": [
-		{
-			"id": 0,
-			"nombre": "JavaScript"
-		},
-		{
-			"id": 1,
-			"nombre": "Java"
-		},
-		{
-			"id": 2,
-			"nombre": "C++"
-		},
-		{
-			"id": 3,
-			"nombre": ".NET"
-		},
-		{
-			"id": 4,
-			"nombre": "COBOL"
-		},
-		{
-			"id": 5,
-			"nombre": "C#"
-		},
-		{
-			"id": 6,
-			"nombre": "Ensamblador"
-		},
-		{
-			"id": 7,
-			"nombre": "Python"
-		},
-		{
-			"id": 8,
-			"nombre": "Lenguaje R"
-		},
-		{
-			"id": 9,
-			"nombre": "C"
-		},
-		{
-			"id": 10,
-			"nombre": "SQL"
-		},
-		{
-			"id": 11,
-			"nombre": "Swift"
-		},
-		{
-			"id": 12,
-			"nombre": "Ruby"
-		}
-	]
+    {
+      "id": 1,
+      "nombre": "Java",
+      "comentario": "Es muy utilizado"
+    },
+    {
+      "id": 2,
+      "nombre": ".NET",
+      "comentario": "Pagan bien"
+    },
+    {
+      "id": 3,
+      "nombre": "Cobol",
+      "comentario": "Nunca dejará de usarse"
+    }
+  ]
 }

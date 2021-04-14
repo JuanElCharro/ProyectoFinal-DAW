@@ -81,12 +81,12 @@
                                 <h2>Encuesta a programadores</h2>
                                 <div class="form">
                                     <label>Lenguaje de programacion favorito:</label>
-                                    <select v-model="seleccionado">
-                                        <option v-for="(leng, index) in lenguajes" :key="leng">{{leng}}</option>
+                                    <select v-model="nombre">
+                                        <option v-for="(lenguaje, index) in lenguajes" :key="lenguaje">{{lenguaje.nombre}}</option>
                                     </select>
                                     <label>Breve razon de su eleccion: </label>
-                                    <input type="text" id="razon" name="razon" placeholder="Lo mas breve posible..">
-                                    <button v-on:click="mostrar()">Enviar</button>
+                                    <input v-model="comentario" type="text" id="razon" name="razon" placeholder="Lo mas breve posible..">
+                                    <button id="enviarB" v-on:click="guardar()">Enviar</button>
                                 </div>
                             </div>
                             <script>
