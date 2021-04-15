@@ -1,8 +1,6 @@
 const app = Vue.createApp({
   data() {
     return {
-      seleccionado: '',
-
       id: null,
       nombre: null,
       comentario: null,
@@ -39,6 +37,19 @@ const app = Vue.createApp({
         id: '8',
         nombre: 'Python',
       },
+      {
+        id: '9',
+        nombre: 'Ruby',
+      },
+      {
+        id: '10',
+        nombre: 'C',
+      },
+      {
+        id: '11',
+        nombre: 'Fortran',
+      },
+
       ]
     };
   },

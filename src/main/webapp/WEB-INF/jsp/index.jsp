@@ -6,18 +6,21 @@
             <html>
 
             <head>
-                <!-- <link rel="stylesheet" href="css/index.css"> -->
                 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <!-- BOOTSTRAP -->
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+                <!-- CSS -->
                 <link rel="stylesheet" href="css/menu.css">
                 <link rel="stylesheet" href="css/formularios.css">
 
                 <!-- VUE -->
                 <script src="https://unpkg.com/vue@next"></script>
-                <script src="vue/vue.js"></script>
+                <script src="vue/encuestaVUE.js"></script>
 
                 <!-- AXIOS -->
                 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

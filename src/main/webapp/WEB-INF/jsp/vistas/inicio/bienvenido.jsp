@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm 4" id="texto-bienvenido">
+                    <div class="col-sm" id="texto-bienvenido">
                         <div class="row">
                             <h2>Cual es nuestra filosofia:</h2>
                             <p>
@@ -82,10 +82,12 @@
                                 <div class="form">
                                     <label>Lenguaje de programacion favorito:</label>
                                     <select v-model="nombre">
-                                        <option v-for="(lenguaje, index) in lenguajes" :key="lenguaje">{{lenguaje.nombre}}</option>
+                                        <option v-for="(lenguaje, index) in lenguajes" :key="lenguaje">
+                                            {{lenguaje.nombre}}</option>
                                     </select>
                                     <label>Breve razon de su eleccion: </label>
-                                    <input v-model="comentario" type="text" id="razon" name="razon" placeholder="Lo mas breve posible..">
+                                    <input v-model="comentario" type="text" id="razon" name="razon"
+                                        placeholder="Lo mas breve posible..">
                                     <button id="enviarB" v-on:click="guardar()">Enviar</button>
                                 </div>
                             </div>
@@ -97,8 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm 8">
-
+                    <div class="col-sm">
                         <div class="col">
                             <div class="jumbotron mt-3">
                                 <p class="lead mb-4">"Cuando me preguntan cuando estara listo un programa, contesto:
