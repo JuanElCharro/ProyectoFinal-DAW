@@ -60,7 +60,7 @@ const app = Vue.createApp({
         nombre: this.nombre,
         comentario: this.comentario,
       });
-      alert("Gracias por su colaboracion");
+      alert("Gracias por colaborar en la encuesta.");
     },
     guardarId(id) {
       this.id = id + 1;

@@ -1,0 +1,49 @@
+{
+  "lenguajes": [
+    {
+      "id": 1,
+      "nombre": "Java",
+      "comentario": "Es muy utilizado"
+    },
+    {
+      "id": 2,
+      "nombre": ".NET",
+      "comentario": "Pagan bien"
+    },
+    {
+      "id": 3,
+      "nombre": "Cobol",
+      "comentario": "Nunca dejará de usarse"
+    },
+    {
+      "id": 4,
+      "nombre": "C",
+      "comentario": "Fue mi primer lenguaje"
+    },
+    {
+      "id": 5,
+      "nombre": "Lenguaje R",
+      "comentario": "Soy matemático"
+    },
+    {
+      "id": 6,
+      "nombre": "Ruby",
+      "comentario": "Ahora está de moda"
+    },
+    {
+      "id": 7,
+      "nombre": "Fortran",
+      "comentario": "Un viejo fiable"
+    },
+    {
+      "id": 8,
+      "nombre": "C++",
+      "comentario": "El más usado en juegos"
+    },
+    {
+      "id": 9,
+      "nombre": "Python",
+      "comentario": "Me gusta el nombre del lenguaje"
+    }
+  ]
+}

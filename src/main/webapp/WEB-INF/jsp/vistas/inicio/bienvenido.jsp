@@ -123,10 +123,7 @@
                 </div>
             </div>
 
-            <div class="jumbotron text-center" style="margin-bottom:0">
-                <p>Actualmente v1.0.0</p>
-                <p>2021 - Juan Garcia Hernandez</p>
-            </div>
+            <%@include file="../../footer.html" %>
     </body>
 
     </html>

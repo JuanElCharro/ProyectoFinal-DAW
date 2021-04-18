@@ -1,27 +1,121 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<!-- BOOTSTRAP -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+    <!DOCTYPE html>
+    <html>
 
-                <!-- CSS -->
-                <link rel="stylesheet" href="css/menu.css">
-                <link rel="stylesheet" href="css/formularios.css">
+    <head>
+        <meta charset="ISO-8859-1">
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-                <!-- VUE -->
-                <script src="https://unpkg.com/vue@next"></script>
-                <script src="vue/encuestaVUE.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/formularios.css">
 
-                <!-- AXIOS -->
-                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-	<%@include file="../../menu.html" %>
-</body>
-</html>
+        <!-- VUE -->
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="vue/encuestaVUE.js"></script>
+
+        <!-- AXIOS -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body>
+        <%@include file="../../menu.html" %>
+
+            <div class="container" style="margin-top:30px">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="texto-bienvenido">
+                            <h3 id="center">Quien Soy</h3>
+                            <h5 id="center">Me llamo Juan Garcia Hernandez</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="jumbotron mt-3">
+                            <p>Foto:</p>
+                            <p class="lead mb-4">
+                                Aqui va mi foto
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8">
+                        <div class="jumbotron mt-3">
+                            <p>Texto:</p>
+                            <p class="lead mb-4">
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="jumbotron mt-3">
+                            <p>Texto:</p>
+                            <p class="lead mb-4">
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div id="texto-bienvenido">
+                            <h3 id="center">Contacta conmigo</h3>
+                            <h5 id="center">Puedes enviarme sugerencias, mejoras o bugs</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="jumbotron mt-3">
+                            <p>Texto:</p>
+                            <p class="lead mb-4">
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                        </div>
+                        <div class="jumbotron mt-3">
+                            <p>Texto:</p>
+                            <p class="lead mb-4">
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <!-- VUE -->
+                        <div id="app-contacto">
+                            <h2>Sugerencias</h2>
+                            <div class="form">
+                                <label>Tipo de sugerencia:</label>
+                                <select v-model="nombre">
+                                    <option v-for="(lenguaje, index) in lenguajes" :key="lenguaje">
+                                        {{lenguaje.nombre}}</option>
+                                </select>
+                                <label>Desarrolle la sugerencia: </label>
+                                <textarea v-model="sugerencia" name="" id="" cols="30" rows="12" maxlength="1000" placeholder="Desarrolla aqui.."></textarea>
+                                <button id="enviarB" v-on:click="guardar()">Enviar</button>
+                            </div>
+                        </div>
+                        <script>
+                            app.mount("#app-contacto");
+                        </script>
+                        <!-- VUE -->
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <%@include file="../../footer.html" %>
+    </body>
+
+    </html>
