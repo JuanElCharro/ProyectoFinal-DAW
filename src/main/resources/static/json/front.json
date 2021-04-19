@@ -19,36 +19,6 @@
       "id": 4,
       "nombre": "C",
       "comentario": "Fue mi primer lenguaje"
-    },
-    {
-      "id": 5,
-      "nombre": "Lenguaje R",
-      "comentario": "Soy matemático"
-    },
-    {
-      "id": 6,
-      "nombre": "Ruby",
-      "comentario": "Ahora está de moda"
-    },
-    {
-      "id": 7,
-      "nombre": "Fortran",
-      "comentario": "Un viejo fiable"
-    },
-    {
-      "id": 8,
-      "nombre": "C++",
-      "comentario": "El más usado en juegos"
-    },
-    {
-      "id": 9,
-      "nombre": "Python",
-      "comentario": "Me gusta el nombre del lenguaje"
-    },
-    {
-      "id": 10,
-      "nombre": "C++",
-      "comentario": "Los videojuegos lo usan"
     }
   ],
   "incidencias": [
@@ -78,15 +48,9 @@
     },
     {
       "id": 5,
-      "nombre": "Sugerencia o peticion",
-      "correo": "fdhgdf",
-      "comentario": "dfhgdhfjghkj"
-    },
-    {
-      "id": 6,
-      "nombre": "Otro",
-      "correo": "juanelcharro@gmail.com",
-      "comentario": "No limpia formularios"
+      "nombre": "Bug en la Web",
+      "correo": "dsfsdffdsdf",
+      "comentario": "ddvsdvs"
     }
   ]
 }

@@ -36,9 +36,8 @@
 
                     <div class="col-sm-4">
                         <div class="jumbotron mt-3">
-                            <p>Foto:</p>
                             <p class="lead mb-4">
-                                Aqui va mi foto
+                                <img src="media/foto.jpg" width="280" height="280" alt="mi-foto">
                             </p>
                         </div>
                     </div>
@@ -102,10 +101,10 @@
                                         {{incidencia.nombre}}</option>
                                 </select>
                                 <label>Correo de contacto (opcional): </label>
-                                <input v-model="correo" type="text" id="email" name="email"
-                                    placeholder="sucorreo@direccion.com">
+                                <input v-model="correo" type="email" id="email" name="email"
+                                    placeholder="email@direccion.com">
                                 <label>Desarrolle la sugerencia: </label>
-                                <textarea v-model="comentario" name="" id="" cols="30" rows="10" maxlength="900"
+                                <textarea v-model="comentario" name="txarea" id="txarea" cols="30" rows="10" maxlength="900"
                                     placeholder="Desarrolle la incidencia..."></textarea>
                                 <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                             </div>
