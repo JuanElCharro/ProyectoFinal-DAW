@@ -16,7 +16,7 @@
 
         <!-- VUE -->
         <script src="https://unpkg.com/vue@next"></script>
-        <script src="vue/encuestaVUE.js"></script>
+        <script src="vue/incidenciasVUE.js"></script>
 
         <!-- AXIOS -->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -93,21 +93,25 @@
 
                     <div class="col-sm-7">
                         <!-- VUE -->
-                        <div id="app-contacto">
-                            <h2>Sugerencias</h2>
+                        <div id="app">
+                            <h2>Incidencias</h2>
                             <div class="form">
-                                <label>Tipo de sugerencia:</label>
+                                <label>Tipo de incidencia:</label>
                                 <select v-model="nombre">
-                                    <option v-for="(lenguaje, index) in lenguajes" :key="lenguaje">
-                                        {{lenguaje.nombre}}</option>
+                                    <option v-for="(incidencia, index) in incidencias" :key="incidencia">
+                                        {{incidencia.nombre}}</option>
                                 </select>
+                                <label>Correo de contacto (opcional): </label>
+                                <input v-model="correo" type="text" id="email" name="email"
+                                    placeholder="sucorreo@direccion.com">
                                 <label>Desarrolle la sugerencia: </label>
-                                <textarea v-model="sugerencia" name="" id="" cols="30" rows="12" maxlength="1000" placeholder="Desarrolla aqui.."></textarea>
+                                <textarea v-model="comentario" name="" id="" cols="30" rows="10" maxlength="900"
+                                    placeholder="Desarrolle la incidencia..."></textarea>
                                 <button id="enviarB" v-on:click="guardar()">Enviar</button>
                             </div>
                         </div>
                         <script>
-                            app.mount("#app-contacto");
+                            app.mount("#app");
                         </script>
                         <!-- VUE -->
                     </div>

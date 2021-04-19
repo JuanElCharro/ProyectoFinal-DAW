@@ -45,5 +45,19 @@
       "nombre": "Python",
       "comentario": "Me gusta el nombre del lenguaje"
     }
+  ],
+  "incidencias": [
+    {
+      "id": 1,
+      "nombre": "Otro",
+      "correo": "juan@email.com",
+      "comentario": "¡Me encanta su web!"
+    },
+    {
+      "id": 2,
+      "nombre": "Informacion sobre un programa",
+      "correo": null,
+      "comentario": "¡Falta mi programa favorito!"
+    }
   ]
 }
