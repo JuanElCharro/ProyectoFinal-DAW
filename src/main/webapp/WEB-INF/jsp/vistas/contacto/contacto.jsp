@@ -107,7 +107,7 @@
                                 <label>Desarrolle la sugerencia: </label>
                                 <textarea v-model="comentario" name="" id="" cols="30" rows="10" maxlength="900"
                                     placeholder="Desarrolle la incidencia..."></textarea>
-                                <button id="enviarB" v-on:click="guardar()">Enviar</button>
+                                <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                             </div>
                         </div>
                         <script>

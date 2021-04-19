@@ -44,6 +44,11 @@
       "id": 9,
       "nombre": "Python",
       "comentario": "Me gusta el nombre del lenguaje"
+    },
+    {
+      "id": 10,
+      "nombre": "C++",
+      "comentario": "Los videojuegos lo usan"
     }
   ],
   "incidencias": [
@@ -58,6 +63,30 @@
       "nombre": "Informacion sobre un programa",
       "correo": null,
       "comentario": "¡Falta mi programa favorito!"
+    },
+    {
+      "id": 3,
+      "nombre": "Informacion sobre un programa",
+      "correo": "joselu87@prueba.com",
+      "comentario": "Falta actualizar una versión"
+    },
+    {
+      "id": 4,
+      "nombre": "Bug en la Web",
+      "correo": "sdfsdf@sdfsdf.com",
+      "comentario": "bug"
+    },
+    {
+      "id": 5,
+      "nombre": "Sugerencia o peticion",
+      "correo": "fdhgdf",
+      "comentario": "dfhgdhfjghkj"
+    },
+    {
+      "id": 6,
+      "nombre": "Otro",
+      "correo": "juanelcharro@gmail.com",
+      "comentario": "No limpia formularios"
     }
   ]
 }

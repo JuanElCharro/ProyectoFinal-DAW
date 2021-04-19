@@ -26,6 +26,9 @@ const app = Vue.createApp({
       };
     },
     methods: {
+      reload(){
+        setTimeout(function(){ location.reload() }, 1000);
+      },
       guardar() {
         axios.post("http://localhost:3000/incidencias", {
           id: parseInt(this.id, 10),

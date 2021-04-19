@@ -88,7 +88,7 @@
                                     <label>Breve razon de su eleccion: </label>
                                     <input v-model="comentario" type="text" id="razon" name="razon"
                                         placeholder="Lo mas breve posible..">
-                                    <button id="enviarB" v-on:click="guardar()">Enviar</button>
+                                    <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                                 </div>
                             </div>
                             <script>
