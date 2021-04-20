@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm" id="texto-bienvenido">
+                    <div class="col-sm-11 col-lg-5" id="texto-bienvenido">
                         <div class="row">
                             <h2>Cual es nuestra filosofia:</h2>
                             <p>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="col">
                             <div class="jumbotron mt-3">
                                 <p class="lead mb-4">"Cuando me preguntan cuando estara listo un programa, contesto:
@@ -117,8 +117,10 @@
                                 <p id="right">- Marissa Mayer</p>
                             </div>
                         </div>
-
                     </div>
+                       
+
+                   
                     <br>
                 </div>
             </div>
