@@ -34,15 +34,15 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="d-none d-xl-block col-xl-4"> 
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4">
-                                <img src="media/foto.jpg" width="280" height="280" alt="mi-foto">
+                                <img src="media/foto.jpg" width="285" height="285" alt="mi-foto">
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-sm-8">
+                    <div class="col-xl-8 col-sm-12">
                         <div class="jumbotron mt-3">
                             <p>Texto:</p>
                             <p class="lead mb-4">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-5">
+                    <div class="col-sm-12 col-lg-5">
                         <div class="jumbotron mt-3">
                             <p>Texto:</p>
                             <p class="lead mb-4">
@@ -90,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-7">
+                    <div class="col-sm-12 col-lg-7">
                         <!-- VUE -->
                         <div id="app">
                             <h2>Incidencias</h2>

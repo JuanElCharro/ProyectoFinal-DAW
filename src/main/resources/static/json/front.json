@@ -19,6 +19,11 @@
       "id": 4,
       "nombre": "C",
       "comentario": "Fue mi primer lenguaje"
+    },
+    {
+      "id": 5,
+      "nombre": "JavaScript",
+      "comentario": "Nunca desaparecerá"
     }
   ],
   "incidencias": [
@@ -51,6 +56,12 @@
       "nombre": "Bug en la Web",
       "correo": "dsfsdffdsdf",
       "comentario": "ddvsdvs"
+    },
+    {
+      "id": 6,
+      "nombre": "Otro",
+      "correo": "juan@gmail.com",
+      "comentario": "Ya funciona todo!"
     }
   ]
 }
