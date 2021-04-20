@@ -29,35 +29,43 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="texto-bienvenido">
-                            <h3 id="center">Quien Soy</h3>
-                            <h5 id="center">Me llamo Juan Garcia Hernandez</h5>
+                            <h2 id="center">QUIEN SOY</h2>
+                            <h5 id="center">Proyecto, gustos y vida en la programacion</h5>
                         </div>
                     </div>
 
-                    <div class="d-none d-xl-block col-xl-4"> 
+                    <div class="d-none d-xl-block col-xl-4">
                         <div class="jumbotron mt-3">
-                            <p class="lead mb-4">
-                                <img src="media/foto.jpg" width="285" height="285" alt="mi-foto">
+                            <p class="lead mb-4" id="center">
+                                <img id="fotoPerfil" src="media/foto.jpg" width="250" height="250" alt="mi-foto">
+                                <strong>Juan Garcia Hernandez</strong> <br> <a
+                                    href="https://www.viewnext.com/que-es-un-full-stack-developer/">Full Stack
+                                    Developer</a>
                             </p>
                         </div>
                     </div>
 
                     <div class="col-xl-8 col-sm-12">
                         <div class="jumbotron mt-3">
-                            <p>Texto:</p>
+                            <h3>Hola,</h3>
                             <p class="lead mb-4">
-                                texto texto texto texto texto texto texto texto texto texto texto texto
-                                texto texto texto texto texto texto texto texto texto texto texto texto
-                                texto texto texto texto texto texto texto texto texto texto texto texto
-                                texto texto texto texto texto texto texto texto texto texto texto texto
-                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                Mi nombre es Juan Garcia Hernandez. Entre muchos aspectos de mi vida soy
+                                una persona alegre, con sentido del humor y con muchas ganas aprender siempre cosas
+                                nuevas. Soy natural de Salamanca, me gusta el arte, la programacion, viajar, los
+                                videojuegos y la musica. Vamos, por fuera como todo el mundo.
+                                La musica Rock es sagrada y tambien tengo un gato.
+                            </p>
+                            <p class="lead mb-4">
+                                La razon de la existencia de libreApp Library ha surgido como una inquietud
+                                mia por dar a conocer y agrupar el acceso a gran parte de los proyectos de
+                                informatica de alto nivel con licencias Copyleft y gratuitas.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-sm-12">
                         <div class="jumbotron mt-3">
-                            <p>Texto:</p>
+                            <h3>Texto:</h3>
                             <p class="lead mb-4">
                                 texto texto texto texto texto texto texto texto texto texto texto texto
                                 texto texto texto texto texto texto texto texto texto texto texto texto
@@ -104,8 +112,8 @@
                                 <input v-model="correo" type="email" id="email" name="email"
                                     placeholder="email@direccion.com">
                                 <label>Desarrolle la sugerencia: </label>
-                                <textarea v-model="comentario" name="txarea" id="txarea" cols="30" rows="10" maxlength="900"
-                                    placeholder="Desarrolle la incidencia..."></textarea>
+                                <textarea v-model="comentario" name="txarea" id="txarea" cols="30" rows="10"
+                                    maxlength="900" placeholder="Desarrolle la incidencia..."></textarea>
                                 <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                             </div>
                         </div>

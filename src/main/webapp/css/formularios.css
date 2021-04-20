@@ -35,7 +35,7 @@ input[type=email], select {
   padding: 20px;
 }
 
-textarea{
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -43,4 +43,8 @@ textarea{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+#fotoPerfil {
+  border-radius: 50%;
 }
