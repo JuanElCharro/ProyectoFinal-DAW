@@ -4,64 +4,15 @@
       "id": 1,
       "nombre": "Java",
       "comentario": "Es muy utilizado"
-    },
-    {
-      "id": 2,
-      "nombre": ".NET",
-      "comentario": "Pagan bien"
-    },
-    {
-      "id": 3,
-      "nombre": "Cobol",
-      "comentario": "Nunca dejará de usarse"
-    },
-    {
-      "id": 4,
-      "nombre": "C",
-      "comentario": "Fue mi primer lenguaje"
-    },
-    {
-      "id": 5,
-      "nombre": "JavaScript",
-      "comentario": "Nunca desaparecerá"
     }
   ],
   "incidencias": [
     {
       "id": 1,
-      "nombre": "Otro",
-      "correo": "juan@email.com",
-      "comentario": "¡Me encanta su web!"
-    },
-    {
-      "id": 2,
-      "nombre": "Informacion sobre un programa",
-      "correo": null,
-      "comentario": "¡Falta mi programa favorito!"
-    },
-    {
-      "id": 3,
-      "nombre": "Informacion sobre un programa",
-      "correo": "joselu87@prueba.com",
-      "comentario": "Falta actualizar una versión"
-    },
-    {
-      "id": 4,
-      "nombre": "Bug en la Web",
-      "correo": "sdfsdf@sdfsdf.com",
-      "comentario": "bug"
-    },
-    {
-      "id": 5,
-      "nombre": "Bug en la Web",
-      "correo": "dsfsdffdsdf",
-      "comentario": "ddvsdvs"
-    },
-    {
-      "id": 6,
-      "nombre": "Otro",
+      "nombre": "Sugerencia o peticion",
       "correo": "juan@gmail.com",
-      "comentario": "Ya funciona todo!"
+      "comentario": "Faltaría un slider del 1 al 10 para medir el grado de satisfacción.",
+      "satisfaccion": "8"
     }
   ]
 }

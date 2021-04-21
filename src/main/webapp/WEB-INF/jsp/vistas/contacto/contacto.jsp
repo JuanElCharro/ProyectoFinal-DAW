@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="texto-bienvenido">
-                            <h2 id="center">QUIEN SOY</h2>
+                            <h3 id="center">QUIEN ESTA DETRAS DEL PROYECTO</h3>
                             <h5 id="center">Proyecto, gustos y vida en la programacion</h5>
                         </div>
                     </div>
@@ -76,21 +76,21 @@
 
                     <div class="col-sm-12">
                         <div id="texto-bienvenido">
-                            <h3 id="center">Contacta conmigo</h3>
+                            <h3 id="center">FEEDBACK Y CONTACTO</h3>
                             <h5 id="center">Puedes enviarme sugerencias, mejoras o bugs</h5>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-lg-5">
                         <div class="jumbotron mt-3">
-                            <p>Texto:</p>
+                            <h3>Texto:</h3>
                             <p class="lead mb-4">
                                 texto texto texto texto texto texto texto texto texto texto texto texto
                                 texto texto texto texto texto texto texto texto texto texto texto texto
                             </p>
                         </div>
                         <div class="jumbotron mt-3">
-                            <p>Texto:</p>
+                            <h3>Texto:</h3>
                             <p class="lead mb-4">
                                 texto texto texto texto texto texto texto texto texto texto texto texto
                                 texto texto texto texto texto texto texto texto texto texto texto texto
@@ -112,8 +112,12 @@
                                 <input v-model="correo" type="email" id="email" name="email"
                                     placeholder="email@direccion.com">
                                 <label>Desarrolle la sugerencia: </label>
-                                <textarea v-model="comentario" name="txarea" id="txarea" cols="30" rows="10"
+                                <textarea v-model="comentario" name="txarea" id="txarea" cols="30" rows="7"
                                     maxlength="900" placeholder="Desarrolle la incidencia..."></textarea>
+                                <div class="slidecontainer">
+                                    <p>Grado de satisfaccion con la web:</p>
+                                    <input v-model="satisfaccion" type="range" min="0" max="10" value="5" class="slider" step="1" id="slider-nota">
+                                  </div>
                                 <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                             </div>
                         </div>

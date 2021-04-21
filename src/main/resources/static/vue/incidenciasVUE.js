@@ -5,6 +5,7 @@ const app = Vue.createApp({
         nombre: null,
         correo: null,
         comentario: null,
+        satisfaccion: null,
   
         incidencias: [{
           id: 1,
@@ -35,6 +36,7 @@ const app = Vue.createApp({
           nombre: this.nombre,
           correo: this.correo,
           comentario: this.comentario,
+          satisfaccion: this.satisfaccion,
         });
         alert("Agradecemos su incidencia, gracias.");
       },
