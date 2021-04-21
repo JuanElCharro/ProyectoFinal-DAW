@@ -5,22 +5,34 @@ const app = Vue.createApp({
         nombre: null,
         correo: null,
         comentario: null,
-        satisfaccion: null,
+        satisfaccion: 5,
   
         incidencias: [{
           id: 1,
-          nombre: 'Bug en la Web',
+          nombre: 'He encontrado un bug',
         },
         {
           id: 2,
-          nombre: 'Sugerencia o peticion',
+          nombre: 'Tengo una sugerencia para la web',
         },
         {
           id: 3,
-          nombre: 'Informacion sobre un programa',
+          nombre: 'Un programa no cumple las condidiciones',
         },
         {
           id: 4,
+          nombre: 'Algo no funciona en la web',
+        },
+        {
+          id: 5,
+          nombre: 'Tengo una duda sin resolver',
+        },
+        {
+          id: 6,
+          nombre: 'Quiero recomendar un programa',
+        },
+        {
+          id: 7,
           nombre: 'Otro',
         },
         ]

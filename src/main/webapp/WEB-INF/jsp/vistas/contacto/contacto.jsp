@@ -145,7 +145,7 @@
                                     maxlength="900" placeholder="Desarrolle la incidencia..."></textarea>
                                 <div class="slidecontainer">
                                     <p>Grado de satisfaccion con la web:</p>
-                                    <input v-model="satisfaccion" type="range" min="0" max="10" value="5" class="slider" step="1" id="slider-nota">
+                                    <input v-model="satisfaccion" type="range" min="0" max="10" class="slider" step="1" id="slider-nota">
                                   </div>
                                 <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                             </div>

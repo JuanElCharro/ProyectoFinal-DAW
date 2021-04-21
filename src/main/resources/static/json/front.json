@@ -4,6 +4,16 @@
       "id": 1,
       "nombre": "Java",
       "comentario": "Es muy utilizado"
+    },
+    {
+      "id": 2,
+      "nombre": "Python",
+      "comentario": "¡Está de moda!"
+    },
+    {
+      "id": 3,
+      "nombre": "C++",
+      "comentario": "Mis videojuegos favoritos se han hecho con este lenguaje"
     }
   ],
   "incidencias": [
@@ -13,6 +23,41 @@
       "correo": "juan@gmail.com",
       "comentario": "Faltaría un slider del 1 al 10 para medir el grado de satisfacción.",
       "satisfaccion": "8"
+    },
+    {
+      "id": 2,
+      "nombre": "Algo no funciona en la web",
+      "correo": null,
+      "comentario": "Tio, te falta la Base de Datos MySQL",
+      "satisfaccion": null
+    },
+    {
+      "id": 3,
+      "nombre": "Tengo una duda sin resolver",
+      "correo": null,
+      "comentario": "WTF es esto",
+      "satisfaccion": "4"
+    },
+    {
+      "id": 4,
+      "nombre": "Quiero recomendar un programa",
+      "correo": "jose@lol.com",
+      "comentario": "El Fornait",
+      "satisfaccion": 5
+    },
+    {
+      "id": 5,
+      "nombre": "Otro",
+      "correo": "asfsdfsdfsd",
+      "comentario": "Propaganda rusa",
+      "satisfaccion": "7"
+    },
+    {
+      "id": 6,
+      "nombre": "Otro",
+      "correo": null,
+      "comentario": "No e gusta le doy a dislaik",
+      "satisfaccion": "0"
     }
   ]
 }
