@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="texto-bienvenido">
-                            <h3 id="center">QUIEN ESTA DETRAS DEL PROYECTO</h3>
+                            <h3 id="center">ORIGEN, AUTOR E HISTORIA</h3>
                             <h5 id="center">Proyecto, gustos y vida en la programacion</h5>
                         </div>
                     </div>
@@ -65,11 +65,40 @@
 
                     <div class="col-sm-12">
                         <div class="jumbotron mt-3">
-                            <h3>Texto:</h3>
+                            <h3>La Biblioteca,</h3>
                             <p class="lead mb-4">
-                                texto texto texto texto texto texto texto texto texto texto texto texto
-                                texto texto texto texto texto texto texto texto texto texto texto texto
-                                texto texto texto texto texto texto texto texto texto texto texto texto
+                                Es un lugar donde quiero recoger todos los grandes proyectos de multiples campos
+                                profesionales (programacion, ofimatica, imagen y sonido, edicion, retransmision, 
+                                bases de datos, utilidades, graficos, apredizaje, robotica etc) con las unicas
+                                condiciones que sea Software con licencias libres y/o Open Source, y que sus proyectos
+                                sean activos y no esten abandonados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-xl-block col-xl-4">
+                        <div class="jumbotron mt-3">
+                            <p class="lead mb-4" id="center">
+                                <img src="media/iconos-contacto/plus-icon.png" width="250" height="250" alt="plus-icon">
+                                Puede agregar los programas que cumplan las condiciones
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-xl-block col-xl-4">
+                        <div class="jumbotron mt-3">
+                            <p class="lead mb-4" id="center">
+                                <img src="media/iconos-contacto/search-icon.png" width="250" height="250" alt="search-icon">
+                                Puede buscar programas en nuestra BBDD
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-xl-block col-xl-4">
+                        <div class="jumbotron mt-3">
+                            <p class="lead mb-4" id="center">
+                                <img src="media/iconos-contacto/write-icon.png" width="250" height="250" alt="search-icon">
+                                Puede escribir comentarios o ver las opiniones de los usuarios
                             </p>
                         </div>
                     </div>
