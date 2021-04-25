@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class InicioController {
+	
 	@GetMapping(value = "inicio")
-	public String InicioController(ModelMap model) {
+	public String getInicio(ModelMap model) {
 		return "vistas/inicio/inicio";
 	}
 }

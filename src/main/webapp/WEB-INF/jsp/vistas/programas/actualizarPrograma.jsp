@@ -1,69 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+	<!DOCTYPE html>
+	<html>
 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page isELIgnored="false"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/formularios.css">
-<link rel="stylesheet" href="css/tablas.css">
-</head>
-<body>
-	<h2>Modificación de alumnos</h2>
-	<%@include file="../../menu.html"%>
-	
-	<div class="container">
-		<div class="form">
-			<form action="http://localhost:8080/colegio/formularioactualizaralumnos" method="post">
-				<label for="id">Id Alumno</label> 
-				<input type="text" id="id"	name="id"> 
-				<label for="nombre">Nombre Alumno</label> 
-				<input type="text" id="nombre" name="nombre">
-				<br> 
-				<input type="submit" value="Enviar">
-			</form>
-		</div>		
-	
-		<c:forEach items="${lista}" var="alumno">
-			<div class="form">
-				<form action="http://localhost:8080/colegio/actualizaralumno" method="post">
-					<input class="hidden" type="text" name="idOld" id="idOld" value="${alumno.id}">
-					<label for="id">Id Alumno</label> 
-					<input type="text" id="id"	name="id" value="${alumno.id}"> 
-					<label for="nombre">Nombre Alumno</label> 
-					<input type="text" id="nombre" name="nombre" value="${alumno.nombre}"><br> 
-					
-					<label for="municipios">Municipio</label> 
-					<select name="municipios" id="municipios" >		
-						<c:forEach items="${listaMunicipios}" var="municipio">			
-							<option value="${municipio.id}" > ${municipio.descripcion} </option>
-						</c:forEach>
-						<option value="${alumno.idMunicipio}" selected>${alumno.municipio}</option>
-					</select>
-					
-					<label for="familiaNumerosa">Familia numerosa</label>
-									
-					<c:if test="${alumno.famNumerosa == 1}">
-						<input type="checkbox" id="familiaNumerosa" name="familiaNumerosa" value="1" checked>
-					</c:if>
-					
-					<c:if test="${alumno.famNumerosa == 0}">
-						<input type="checkbox" id="familiaNumerosa" name="familiaNumerosa" value="0">
-					</c:if>
-					<input type="submit" value="Modificar">
-				</form>
-			</div>
-		</c:forEach>
-		
-		<c:if test="${resultado == 1 }">
-			<h3>Alumno actualizado correctamente</h3>
-		</c:if>
-	</div>
+	<head>
+		<meta charset="ISO-8859-1">
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/formularios.css">
 
-</body>
-</html>
+	</head>
+
+	<body>
+		<%@include file="../../menu.html" %>
+
+		<div class="container" style="margin-top:30px">
+			<h1>Actualizar Programa</h1>
+		</div>
+
+		<%@include file="../../footer.html" %>
+	</body>
+
+	</html>

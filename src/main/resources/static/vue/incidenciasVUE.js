@@ -56,13 +56,13 @@ const app = Vue.createApp({
       this.id = id + 1;
     },
     irAgregarPrograma() {
-      window.location.replace("http://localhost:8080/libreApp/programas/crear");
+      window.location.replace("http://localhost:8080/libreApp/crearPrograma");
     },
     irBuscarPrograma() {
-      window.location.replace("http://localhost:8080/libreApp/programas/buscar");
+      window.location.replace("http://localhost:8080/libreApp/buscarPrograma");
     },
     irBuscarComentario() {
-      window.location.replace("http://localhost:8080/libreApp/comentarios/buscar");
+      window.location.replace("http://localhost:8080/libreApp/buscarComentarios");
     },
   },
 });

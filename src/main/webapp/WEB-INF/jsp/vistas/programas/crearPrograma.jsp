@@ -1,49 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+	<!DOCTYPE html>
+	<html>
 
+	<head>
+		<meta charset="ISO-8859-1">
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-   <%@ page isELIgnored="false"%>
-<html>
-<head>
-	 <link rel="stylesheet" href="css/menu.css">
-</head>
-<body>
-<header>
-<h2>Gestión de Colegio</h2>
-</header>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/formularios.css">
 
+	</head>
 
-<%@include file="../../menu.html" %>
-<h2>Crear nueva entrada de programa</h2>
-	<div class="container">
-		<div class="form">
-			<form action="http://localhost:8080/libreApp/crearPrograma" method="post" id="formulario">
-				<label for="id">DNI Alumno</label> 
-				<input type="text" id="id"	name="id"> 
-				<label for="nombre">Nombre Alumno</label> 
-				<input type="text" id="nombre" name="nombre"><br> 
-				
-				<select name="municipios" form="formulario" >		
-					<c:forEach items="${listaMunicipios}" var="municipio">			
-						<option value="${municipio.id}"> ${municipio.descripcion} </option>
-					</c:forEach>
-				</select>
-				<br>
-				<label for="familiaNumerosa">Familia numerosa</label>
-				<input type="checkbox" id="familiaNumerosa" name="familiaNumerosa" value="1">
-				
-				<input type="submit" value="Enviar">
-			</form>
+	<body>
+		<%@include file="../../menu.html" %>
+
+		<div class="container" style="margin-top:30px">
+			<h1>Crear Programa</h1>
 		</div>
-		
-		<c:if test="${resultado == 1}">
-			<b>Alumno insertado correctamente</b>
-		</c:if>
 
-	</div>
+		<%@include file="../../footer.html" %>
+	</body>
 
-
-
-</body>
-</html>
+	</html>
