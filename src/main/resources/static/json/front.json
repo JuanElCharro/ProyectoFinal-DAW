@@ -58,6 +58,13 @@
       "correo": null,
       "comentario": "No e gusta le doy a dislaik",
       "satisfaccion": "0"
+    },
+    {
+      "id": 7,
+      "nombre": "Algo no funciona en la web",
+      "correo": "holi@gmail.com",
+      "comentario": "Me gusta jugar al LOL",
+      "satisfaccion": "3"
     }
   ]
 }

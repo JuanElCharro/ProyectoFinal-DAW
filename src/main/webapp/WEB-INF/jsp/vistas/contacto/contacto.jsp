@@ -34,10 +34,10 @@
                         </div>
                     </div>
 
-                    <div class="d-none d-xl-block col-xl-4">
+                    <div class="d-none d-xl-block d-sm-block d-block col-12 col-sm-12 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
-                                <img id="fotoPerfil" src="media/foto.jpg" width="250" height="250" alt="mi-foto">
+                                <img id="fotoPerfil" src="media/foto.jpg" width="250" height="250" alt="mi-foto"> <br>
                                 <strong>Juan Garcia Hernandez</strong> <br> <a
                                     href="https://www.viewnext.com/que-es-un-full-stack-developer/">Full Stack
                                     Developer</a>
@@ -76,29 +76,29 @@
                         </div>
                     </div>
 
-                    <div class="d-none d-xl-block col-xl-4">
+                    <div class="col-sm-12 col-lg-6 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
                                 <img src="media/iconos-contacto/plus-icon.png" width="250" height="250" alt="plus-icon">
-                                Puede agregar los programas que cumplan las condiciones
+                                <br> Puede agregar los programas que cumplan las condiciones
                             </p>
                         </div>
                     </div>
 
-                    <div class="d-none d-xl-block col-xl-4">
+                    <div class="col-sm-12 col-lg-6 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
                                 <img src="media/iconos-contacto/search-icon.png" width="250" height="250" alt="search-icon">
-                                Puede buscar programas en nuestra BBDD
+                                <br> Puede buscar los programas que desee en nuestra BBDD
                             </p>
                         </div>
                     </div>
 
-                    <div class="d-none d-xl-block col-xl-4">
+                    <div class="col-sm-12 col-lg-12 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
                                 <img src="media/iconos-contacto/write-icon.png" width="250" height="250" alt="search-icon">
-                                Puede escribir comentarios o ver las opiniones de los usuarios
+                                <br> Puede escribir comentarios o ver las opiniones de los usuarios
                             </p>
                         </div>
                     </div>
