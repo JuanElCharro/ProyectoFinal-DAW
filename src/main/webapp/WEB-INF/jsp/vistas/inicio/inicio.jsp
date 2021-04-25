@@ -20,6 +20,7 @@
                 <!-- CSS -->
                 <link rel="stylesheet" href="css/menu.css">
                 <link rel="stylesheet" href="css/formularios.css">
+                <link rel="stylesheet" href="css/retoques.css">
 
                 <!-- VUE -->
                 <script src="https://unpkg.com/vue@next"></script>
@@ -36,20 +37,53 @@
                     <div class="container" style="margin-top:30px">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h3>Referencias</h3>
-                                <p>etcetcetc.</p>
+                                <h3>Tipos de Licencias </h3>
+                                <p>Lista de licencias libres y permitidas en verde, y privativas no permitidas en rojo, la idea es que sirva como guia para los usuarios</p>
                                 <ul class="nav nav-pills flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#">Active</a>
+                                        <a id="licenciasLibres" class="nav-link" href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv2 o GPLv3</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <br>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a id="licenciasPrivativas" class="nav-link" href="https://docs.microsoft.com/en-us/plumbago/plumbagoapplicense">Microsoft EULA</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                        <br>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="licenciasLibres" class="nav-link" href="https://apache.org/licenses/">Apache License</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <br>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="licenciasPrivativas" class="nav-link" href="https://www.defectivebydesign.org/">Software con DRM</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <br>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="licenciasLibres" class="nav-link" href="https://mit-license.org/">MIT license</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <br>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="licenciasPrivativas" class="nav-link" href="https://www.ibm.com/support/pages/ibm-support-licensing-start-page">License Keys</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <br>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="licenciasLibres" class="nav-link" href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <br>
+                                    </li>
+                                    <li class="nav-item">
+                                        <hr>
                                     </li>
                                 </ul>
 
