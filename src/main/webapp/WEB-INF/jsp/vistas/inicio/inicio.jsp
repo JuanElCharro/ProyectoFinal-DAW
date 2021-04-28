@@ -45,7 +45,7 @@
 
                     <div class="container" style="margin-top:30px">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-xl-4">
                                 <h3>Tipos de Licencias </h3>
                                 <p>Lista de licencias libres y permitidas en verde, y privativas no permitidas en rojo,
                                     la idea es que sirva como guia para los usuarios</p>
@@ -112,10 +112,12 @@
 
                                 <hr class="d-sm-none">
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-xl-8 col-sm-12">
                                 <h2><a href="https://www.fsf.org/">Free Software Foundation (FSF)</a></h2>
                                 <h5>Creadores del Sistema Operativo GNU/Linux y de las licencias GPL</h5>
-                                <video id="separacion-imagentexto-inicio" controls="controls" poster="media/inicio/listen-half.jpg" width="720">
+                                <video class="d-none d-md-block d-lg-block d-xl-block"
+                                    id="separacion-imagentexto-inicio" controls="controls"
+                                    poster="media/inicio/listen-half.jpg" width="720">
                                     <source src="media/inicio/Fight-to-Repair-720p.webm" type="video/webm">
                                     </source>
                                 </video>
@@ -132,8 +134,9 @@
                                 <hr>
                                 <h2><a href="https://opensource.org/"> Open Source Initiative (OSI)</a></h2>
                                 <h5>Incentivan a las empresas a usar Software Libre y explicarles el beneficio</h5>
-                                <img id="separacion-imagentexto-inicio" src="media/inicio/opensourceinitiative.png"
-                                    alt="opensourceiniciative" width="720" height="400">
+                                <img class="d-none d-md-block d-lg-block d-xl-block" id="separacion-imagentexto-inicio"
+                                    src="media/inicio/opensourceinitiative.png" alt="opensourceiniciative" width="720"
+                                    height="400">
                                 <p>La <strong>Open Source Initiative </strong> (Iniciativa para el Codigo Abierto) es
                                     una
                                     organizacion dedicada a la promocion del codigo abierto. Fue fundada en febrero de
@@ -146,8 +149,9 @@
                                 <hr>
                                 <h2><a href="https://www.defectivebydesign.org/">Defective By Design</a></h2>
                                 <h5>DefectiveByDesign es un movimiento anti-DRM</h5>
-                                <img id="separacion-imagentexto-inicio" src="media/inicio/Eliminate_DRM.png"
-                                    alt="opensourceiniciative" width="720" height="480">
+                                <img class="d-none d-md-block d-lg-block d-xl-block" id="separacion-imagentexto-inicio"
+                                    src="media/inicio/Eliminate_DRM.png" alt="opensourceiniciative" width="720"
+                                    height="480">
                                 <p> <strong> DefectiveByDesign.org </strong> es un movimiento anti-DRM de base amplia
                                     cuyo objetivo son los
                                     grandes medios, los fabricantes y los distribuidores de DRM.</p>
