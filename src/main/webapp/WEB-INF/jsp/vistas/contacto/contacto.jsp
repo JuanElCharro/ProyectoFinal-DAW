@@ -29,8 +29,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="texto-bienvenido">
-                            <h3 id="center">ORIGEN, AUTOR E HISTORIA</h3>
-                            <h5 id="center">Proyecto, gustos y vida en la programacion</h5>
+                            <h3 id="center">CONTACTO</h3>
+                            <h5 id="center">Origen, autor, historia y proyecto. Gustos y vida en la programacion</h5>
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@
 
                     <div class="col-sm-12">
                         <div id="texto-bienvenido">
-                            <h3 id="center">FEEDBACK Y CONTACTO</h3>
+                            <h3 id="center">FEEDBACK</h3>
                             <h5 id="center">Puedes enviarme sugerencias, mejoras o bugs</h5>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                                 <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                             </div>
                         </div>
-                        
+
                         <!-- VUE -->
                     </div>
                     <br>
@@ -164,9 +164,9 @@
             </div>
             <br>
             <%@include file="../../footer.html" %>
-            <script>
-                app.mount("#app");
-            </script>
+                <script>
+                    app.mount("#app");
+                </script>
     </body>
 
     </html>
