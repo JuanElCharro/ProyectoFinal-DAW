@@ -112,7 +112,7 @@
 
                                 <hr class="d-sm-none">
                             </div>
-                            <div class="col-xl-8 col-sm-12">
+                            <div class="col-xl-8 col-lg-9 col-sm-12">
                                 <h2><a href="https://www.fsf.org/">Free Software Foundation (FSF)</a></h2>
                                 <h5>Creadores del Sistema Operativo GNU/Linux y de las licencias GPL</h5>
                                 <video class="d-none d-md-block d-lg-block d-xl-block"
