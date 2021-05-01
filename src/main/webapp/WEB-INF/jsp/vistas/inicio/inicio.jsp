@@ -98,19 +98,39 @@
                                         <a id="licenciasLibres" class="nav-link"
                                             href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <br>
-                                    </li>
-                                    <li class="nav-item">
-                                        <hr>
-                                    </li>
                                 </ul>
-
+                                <hr>
                                 <h2>About Me</h2>
                                 <h5>Photo of me:</h5>
                                 <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                                <hr>
+                                <h2>Calidad</h2>
+                                <h5>Valore la infomacion mostrada en la web e indique lo que le gustaria
+                                    cambiar o mejorar
+                                </h5>
 
-                                <hr class="d-sm-none">
+                                <div class="col-sm-12">
+                                    <p>La infomacion mostrada es correcta:</p>
+                                    <label class="contenedor">Si
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="contenedor">No
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="contenedor">Ns/Nc
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <p>Problemas encontrados:</p>
+                                    <textarea v-model="comentario" name="txarea" id="txarea" rows="8" maxlength="400"
+                                        placeholder="Escriba el problema..."></textarea>
+                                    <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
+                                </div><br>
+
                             </div>
                             <div class="col-xl-8 col-lg-9 col-sm-12">
                                 <h2><a href="https://www.fsf.org/">Free Software Foundation (FSF)</a></h2>

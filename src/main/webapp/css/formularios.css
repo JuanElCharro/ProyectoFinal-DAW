@@ -1,3 +1,4 @@
+/* Texto */
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -8,6 +9,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+/* Correo Electrónico */
 input[type=email], select {
   width: 100%;
   padding: 12px 20px;
@@ -35,6 +37,7 @@ input[type=email], select {
   padding: 20px;
 }
 
+/* Area de Texto */
 textarea {
   width: 100%;
   padding: 12px 20px;
@@ -45,10 +48,12 @@ textarea {
   box-sizing: border-box;
 }
 
+/* Redondear imagen de perfil */
 #fotoPerfil {
   border-radius: 50%;
 }
 
+/* Slider */
 .slidecontainer {
   width: 100%;
 }
@@ -82,4 +87,64 @@ textarea {
   height: 25px;
   background: #3eb442;
   cursor: pointer;
+}
+
+/* Radio Buttons */
+
+.contenedor {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contenedor input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.contenedor:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.contenedor input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contenedor input:checked~.checkmark:after {
+  display: block;
+}
+
+.contenedor .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
