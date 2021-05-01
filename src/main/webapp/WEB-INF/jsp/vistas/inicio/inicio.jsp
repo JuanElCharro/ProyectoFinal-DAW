@@ -100,16 +100,19 @@
                                     </li>
                                 </ul>
                                 <hr>
-                                <h2>About Me</h2>
-                                <h5>Photo of me:</h5>
-                                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                                <hr>
-                                <h2>Calidad</h2>
-                                <h5>Valore la infomacion mostrada en la web e indique lo que le gustaria
-                                    cambiar o mejorar
-                                </h5>
 
-                                <div class="col-sm-12">
+                                <div>
+                                    <h2>About Me</h2>
+                                    <h5>Photo of me:</h5>
+                                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                                    <hr>
+                                    <h2>Calidad</h2>
+                                    <h5>Valore la infomacion mostrada en la web e indique lo que le gustaria
+                                        cambiar o mejorar
+                                    </h5>
+                                </div>
+
+                                <div>
                                     <p>La infomacion mostrada es correcta:</p>
                                     <label class="contenedor">Si
                                         <input type="radio" checked="checked" name="radio">
@@ -123,13 +126,12 @@
                                         <input type="radio" name="radio">
                                         <span class="checkmark"></span>
                                     </label>
-                                </div>
-                                <div class="col-sm-12">
                                     <p>Problemas encontrados:</p>
-                                    <textarea v-model="comentario" name="txarea" id="txarea" rows="8" maxlength="400"
+                                    <textarea v-model="comentario" name="txarea" id="txarea" rows="5" maxlength="500"
                                         placeholder="Escriba el problema..."></textarea>
                                     <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
-                                </div><br>
+                                </div>
+                                <br>
 
                             </div>
                             <div class="col-xl-8 col-lg-9 col-sm-12">
