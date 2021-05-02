@@ -116,15 +116,15 @@
                                 <div id="app">
                                     <p>La infomacion mostrada es correcta:</p>
                                     <label class="contenedor">Si
-                                        <input type="radio" v-model="respuesta">
+                                        <input type="radio" name="radio" v-model="respuesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">No
-                                        <input type="radio" v-model="respuesta">
+                                        <input type="radio" name="radio" v-model="respuesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">Ns/Nc
-                                        <input type="radio" checked="checked" v-model="respuesta">
+                                        <input type="radio" name="radio" checked="checked" v-model="respuesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <p>Problemas encontrados:</p>
