@@ -24,7 +24,7 @@
 
                 <!-- VUE -->
                 <script src="https://unpkg.com/vue@next"></script>
-                <script src="vue/encuestaVUE.js"></script>
+                <script src="vue/informacionVUE.js"></script>
 
                 <!-- AXIOS -->
                 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -112,25 +112,27 @@
                                     </h5>
                                 </div>
 
-                                <div>
+                                <!-- VUE -->
+                                <div id="app">
                                     <p>La infomacion mostrada es correcta:</p>
                                     <label class="contenedor">Si
-                                        <input type="radio" checked="checked" name="radio">
+                                        <input type="radio" v-model="respuesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">No
-                                        <input type="radio" name="radio">
+                                        <input type="radio" v-model="respuesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">Ns/Nc
-                                        <input type="radio" name="radio">
+                                        <input type="radio" checked="checked" v-model="respuesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <p>Problemas encontrados:</p>
-                                    <textarea v-model="comentario" name="txarea" id="txarea" rows="5" maxlength="500"
+                                    <textarea v-model="desarrollo" name="txarea" id="txarea" rows="5" maxlength="500"
                                         placeholder="Escriba el problema..."></textarea>
                                     <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
                                 </div>
+                                <!-- VUE -->
                                 <br>
 
                             </div>
