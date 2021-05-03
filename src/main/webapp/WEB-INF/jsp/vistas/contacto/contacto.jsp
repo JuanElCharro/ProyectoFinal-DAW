@@ -37,7 +37,8 @@
                     <div class="d-none d-xl-block d-sm-block d-block col-12 col-sm-12 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
-                                <img id="fotoPerfil" src="media/foto.jpg" width="250" height="250" alt="mi-foto"> <br>
+                                <img id="fotoPerfil" src="media/contacto/foto.jpg" width="250" height="250"
+                                    alt="mi-foto"> <br>
                                 <strong>Juan Garcia Hernandez</strong> <br> <a
                                     href="https://www.viewnext.com/que-es-un-full-stack-developer/">Full Stack
                                     Developer</a>
@@ -79,7 +80,7 @@
                     <div class="col-sm-12 col-lg-6 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
-                                <img src="media/iconos-contacto/plus-icon.png" width="250" height="250" alt="plus-icon"
+                                <img src="media/contacto/plus-icon.png" width="250" height="250" alt="plus-icon"
                                     v-on:click="irAgregarPrograma()">
                                 <br> Puede agregar los programas que cumplan las condiciones
                             </p>
@@ -89,8 +90,8 @@
                     <div class="col-sm-12 col-lg-6 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
-                                <img src="media/iconos-contacto/search-icon.png" width="250" height="250"
-                                    alt="search-icon" v-on:click="irBuscarPrograma()">
+                                <img src="media/contacto/search-icon.png" width="250" height="250" alt="search-icon"
+                                    v-on:click="irBuscarPrograma()">
                                 <br> Puede buscar los programas que desee en nuestra BBDD
                             </p>
                         </div>
@@ -99,8 +100,8 @@
                     <div class="col-sm-12 col-lg-12 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
-                                <img src="media/iconos-contacto/write-icon.png" width="250" height="250"
-                                    alt="search-icon" v-on:click="irBuscarComentario()">
+                                <img src="media/contacto/write-icon.png" width="250" height="250" alt="write-icon"
+                                    v-on:click="irBuscarComentario()">
                                 <br> Puede escribir comentarios o ver las opiniones de los usuarios
                             </p>
                         </div>

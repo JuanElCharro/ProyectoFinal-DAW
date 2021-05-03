@@ -32,21 +32,21 @@
                                         <h4>Investigue en nuestra web</h4>
                                         <p>Encuentre el programa que mas se adapta a sus necesidades</p>
                                     </div>
-                                    <img src="media/ComputerProgrammer.jpg" width="1110" height="600" alt="">
+                                    <img src="media/bienvenido/ComputerProgrammer.jpg" width="1110" height="600" alt="">
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption d-block">
                                         <h4>Busque su programa favorito</h4>
                                         <p>En nuestra Base de Datos disponemos de un registro de Software</p>
                                     </div>
-                                    <img src="media/Backlit_keyboard.jpg" width="1110" height="600" alt="">
+                                    <img src="media/bienvenido/Backlit_keyboard.jpg" width="1110" height="600" alt="">
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption d-block">
                                         <h4>Si lo desea puede colaborar</h4>
                                         <p>El codigo de cada app es visible en su repositorio</p>
                                     </div>
-                                    <img src="media/Software_Testing_Life_Cycle.jpg" width="1110" height="600" alt="">
+                                    <img src="media/bienvenido/Software_Testing_Life_Cycle.jpg" width="1110" height="600" alt="">
                                 </div>
                             </div>
 
@@ -118,9 +118,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                     <br>
                 </div>
             </div>

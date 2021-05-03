@@ -1,6 +1,0 @@
-WebPage: https://www.gnu.org/
-WebPage: https://www.gnu.org/graphics/listen.es.html
-WebPage: https://commons.wikimedia.org/wiki/File:Eliminate_DRM.png
-
-LICENSE: https://www.gnu.org/licenses/gpl-3.0.html
-LICENSE: https://creativecommons.org/licenses/by-nd/4.0/
