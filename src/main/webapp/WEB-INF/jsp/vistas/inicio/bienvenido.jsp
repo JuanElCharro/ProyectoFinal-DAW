@@ -46,7 +46,8 @@
                                         <h4>Si lo desea puede colaborar</h4>
                                         <p>El codigo de cada app es visible en su repositorio</p>
                                     </div>
-                                    <img src="media/bienvenido/Software_Testing_Life_Cycle.jpg" width="1110" height="600" alt="">
+                                    <img src="media/bienvenido/Software_Testing_Life_Cycle.jpg" width="1110"
+                                        height="600" alt="">
                                 </div>
                             </div>
 
@@ -119,9 +120,46 @@
                         </div>
                     </div>
                     <br>
+
+                    <div id="tarjetasBienvenido" class="col-xl-3 col-lg-6 col-sm-12">
+                        <div class="card text-white bg-info">
+                            <div class="card-body">
+                                <h3 class="card-title">Esta web usa solamente tecnologias 100% gratuitas.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="tarjetasBienvenido" class="col-xl-3 col-lg-6 col-sm-12">
+                        <div class="card text-white bg-danger">
+                            <div class="card-body">
+                                <h3 class="card-title">Todo el Software usado para crear la web es OpenSource.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="tarjetasBienvenido" class="col-xl-3 col-lg-6 col-sm-12">
+                        <div class="card text-white bg-secondary">
+                            <div class="card-body">
+                                <h3 class="card-title">Toda la multimedia usa la licencia tipo <a
+                                        href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="tarjetasBienvenido" class="col-xl-3 col-lg-6 col-sm-12">
+                        <div class="card text-white bg-primary">
+                            <div class="card-body">
+                                <h3 class="card-title">La web no guarda programas, sino registros.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                 </div>
             </div>
-
+            <br>
             <%@include file="../../footer.html" %>
     </body>
 

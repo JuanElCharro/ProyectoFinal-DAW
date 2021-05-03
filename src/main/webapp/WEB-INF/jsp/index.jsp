@@ -17,6 +17,7 @@
                 <!-- CSS -->
                 <link rel="stylesheet" href="css/menu.css">
                 <link rel="stylesheet" href="css/formularios.css">
+                <link rel="stylesheet" href="css/retoques.css">
 
                 <!-- VUE -->
                 <script src="https://unpkg.com/vue@next"></script>
