@@ -7,23 +7,13 @@
     },
     {
       "id": 2,
-      "nombre": "JavaScript",
-      "comentario": "asdasfdfs"
+      "nombre": ".NET",
+      "comentario": "Lo estoy aprendiendo"
     },
     {
       "id": 3,
-      "nombre": "C++",
-      "comentario": "Es muy cool que no cold"
-    },
-    {
-      "id": 4,
-      "nombre": "Fortran",
-      "comentario": "Me gusta lo que no se usa soy hipster"
-    },
-    {
-      "id": 5,
-      "nombre": "Ruby",
-      "comentario": "Me recuerda a una película WTF"
+      "nombre": "C",
+      "comentario": "Empecé con ese lenguaje"
     }
   ],
   "incidencias": [
@@ -35,29 +25,44 @@
       "satisfaccion": "8"
     },
     {
-      "nombre": "Otro",
-      "correo": "juanelcharro@protonmail.com",
-      "comentario": "Ha sido eliminado todo el código basura de VUE :D",
-      "satisfaccion": "8",
+      "nombre": "Algo no funciona en la web",
+      "correo": "hola@gmail.com",
+      "comentario": "Te falta alguna cosilla, dale una vuelta.",
+      "satisfaccion": "4",
       "id": 2
+    },
+    {
+      "nombre": "He encontrado un bug",
+      "correo": "dasda@gsfrg.com",
+      "comentario": "Me aburro jajaj",
+      "satisfaccion": "0",
+      "id": 3
     }
   ],
   "informacion": [
-    {
-      "respuesta": "InformaciÃ³n Correcta",
-      "desarrollo": "Todo correcto",
-      "id": 1
-    },
-    {
-      "respuesta": null,
-      "desarrollo": "Hay ciertas imperfecciones en su contenido, lo sabrás.",
-      "id": 2
-    },
     {
       "respuestaInfo": "Info Incorrecta",
       "respuestaUtilidad": "No sabe/No contesta",
       "desarrollo": "Se hace lo que se puede, sí",
       "id": 3
+    },
+    {
+      "respuestaInfo": null,
+      "respuestaUtilidad": null,
+      "desarrollo": "Todo correcto nenu",
+      "id": 4
+    },
+    {
+      "respuestaInfo": "Info Correcta",
+      "respuestaUtilidad": "Utilidad Correcta",
+      "desarrollo": "Todo correcto x2",
+      "id": 5
+    },
+    {
+      "respuestaInfo": "Info Incorrecta",
+      "respuestaUtilidad": "No sabe/No contesta",
+      "desarrollo": "Pasan cosas",
+      "id": 6
     }
   ]
 }

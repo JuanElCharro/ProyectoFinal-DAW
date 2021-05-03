@@ -148,8 +148,7 @@
                                     </h5>
                                     <p>La infomacion mostrada es correcta:</p>
                                     <label class="contenedor">Si lo es
-                                        <input type="radio" name="opt" v-model="respuestaInfo" value="Info Correcta"
-                                            checked="checked">
+                                        <input type="radio" name="opt" v-model="respuestaInfo" value="Info Correcta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">No lo es
@@ -164,7 +163,7 @@
                                     <p>La infomacion le ha resultado util:</p>
                                     <label class="contenedor">Es de utilidad
                                         <input type="radio" name="opt2" v-model="respuestaUtilidad"
-                                            value="Utilidad Correcta" checked="checked">
+                                            value="Utilidad Correcta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">No es de utilidad
