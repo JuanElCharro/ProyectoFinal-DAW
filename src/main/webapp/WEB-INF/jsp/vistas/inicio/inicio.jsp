@@ -101,19 +101,19 @@
                                 </ul>
                                 <hr>
 
-                                <div>
+                                <div class="d-none d-xl-block">
                                     <h2>About Me</h2>
                                     <h5>Photo of me:</h5>
                                     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
                                     <hr>
-                                    <h2>Calidad</h2>
-                                    <h5>Valore la infomacion mostrada en la web e indique lo que le gustaria
-                                        cambiar o mejorar
-                                    </h5>
                                 </div>
 
                                 <!-- VUE -->
                                 <div id="app">
+                                    <h2>Calidad</h2>
+                                    <h5>Valore la infomacion mostrada en la web e indique lo que le gustaria
+                                        cambiar o mejorar
+                                    </h5>
                                     <p>La infomacion mostrada es correcta:</p>
                                     <label class="contenedor">Si lo es
                                         <input type="radio" name="opt" v-model="respuestaInfo" value="Info Correcta"

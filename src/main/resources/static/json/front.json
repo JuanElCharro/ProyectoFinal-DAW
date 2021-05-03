@@ -9,6 +9,21 @@
       "id": 2,
       "nombre": "JavaScript",
       "comentario": "asdasfdfs"
+    },
+    {
+      "id": 3,
+      "nombre": "C++",
+      "comentario": "Es muy cool que no cold"
+    },
+    {
+      "id": 4,
+      "nombre": "Fortran",
+      "comentario": "Me gusta lo que no se usa soy hipster"
+    },
+    {
+      "id": 5,
+      "nombre": "Ruby",
+      "comentario": "Me recuerda a una película WTF"
     }
   ],
   "incidencias": [
@@ -18,6 +33,13 @@
       "correo": "juan@gmail.com",
       "comentario": "Faltaría un slider del 1 al 10 para medir el grado de satisfacción.",
       "satisfaccion": "8"
+    },
+    {
+      "nombre": "Otro",
+      "correo": "juanelcharro@protonmail.com",
+      "comentario": "Ha sido eliminado todo el código basura de VUE :D",
+      "satisfaccion": "8",
+      "id": 2
     }
   ],
   "informacion": [

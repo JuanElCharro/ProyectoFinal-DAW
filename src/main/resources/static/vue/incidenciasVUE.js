@@ -1,38 +1,30 @@
 const app = Vue.createApp({
   data() {
     return {
-      id: null,
       nombre: null,
       correo: null,
       comentario: null,
       satisfaccion: 5,
 
       incidencias: [{
-        id: 1,
         nombre: 'He encontrado un bug',
       },
       {
-        id: 2,
         nombre: 'Tengo una sugerencia para la web',
       },
       {
-        id: 3,
         nombre: 'Un programa no cumple las condidiciones',
       },
       {
-        id: 4,
         nombre: 'Algo no funciona en la web',
       },
       {
-        id: 5,
         nombre: 'Tengo una duda sin resolver',
       },
       {
-        id: 6,
         nombre: 'Quiero recomendar un programa',
       },
       {
-        id: 7,
         nombre: 'Otro',
       },
       ]
@@ -44,7 +36,6 @@ const app = Vue.createApp({
     },
     guardar() {
       axios.post("http://localhost:3000/incidencias", {
-        id: parseInt(this.id, 10),
         nombre: this.nombre,
         correo: this.correo,
         comentario: this.comentario,
