@@ -1,3 +1,4 @@
+/* Imagen falsa usada para testear elementos */
 .fakeimg {
   height: 200px;
   background: #aaa;
@@ -20,6 +21,7 @@
   text-align: right;
 }
 
+/* Carrusel de Bienvenido */
 #mi-carrusel{
   margin-top: 1em;
   margin-bottom: 1em;
@@ -29,6 +31,7 @@
   border-radius: 15px;
 }
 
+/* Texto en Bienvenido */
 #texto-bienvenido{
   padding: 2em;
   margin: 2em;

@@ -102,17 +102,42 @@
                                 <hr>
 
                                 <div class="d-none d-xl-block">
-                                    <h2>About Me</h2>
-                                    <h5>Photo of me:</h5>
+                                    <h2>Curiosidades</h2>
+                                    <h5>Tecnologias usadas en la web:</h5>
                                     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
                                     <hr>
                                 </div>
+
+                                <div class="col">
+                                    <div class="card border-primary">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Tecnologias usadas</h3>
+                                            <p class="card-text">A continuacion muestro las tecnologias que he usado
+                                                para construir esta web.</p>
+                                            <a id="buttonCard" href="https://www.w3schools.com/Css/"
+                                                class="btn btn-primary">CSS 3</a>
+                                            <a id="buttonCard" href="https://www.w3schools.com/html/"
+                                                class="btn btn-warning">HTML 5</a>
+                                            <a id="buttonCard" href="https://spring.io/projects/spring-boot"
+                                                class="btn btn-dark">Spring Boot</a>
+                                            <a id="buttonCard" href="https://adoptopenjdk.net/"
+                                                class="btn btn-info">Java JDK</a>
+                                            <a id="buttonCard" href="https://vuejs.org/"
+                                                class="btn btn-success">Vue.js</a>
+                                            <a id="buttonCard" href="https://nodejs.org/en/"
+                                                class="btn btn-danger">Node.js</a>
+                                            <a id="buttonCard" href="https://getbootstrap.com/"
+                                                class="btn btn-secondary">Bootstrap</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
 
                                 <!-- VUE -->
                                 <div id="app">
                                     <h2>Calidad</h2>
                                     <h5>Valore la infomacion mostrada en la web e indique lo que le gustaria
-                                        cambiar o mejorar
+                                        cambiar o mejorar:
                                     </h5>
                                     <p>La infomacion mostrada es correcta:</p>
                                     <label class="contenedor">Si lo es
@@ -121,18 +146,18 @@
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">No lo es
-                                        <input type="radio" name="opt" v-model="respuestaInfo"
-                                            value="Info Incorrecta">
+                                        <input type="radio" name="opt" v-model="respuestaInfo" value="Info Incorrecta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">Ns/Nc
-                                        <input type="radio" name="opt" v-model="respuestaInfo" value="No sabe/No contesta">
+                                        <input type="radio" name="opt" v-model="respuestaInfo"
+                                            value="No sabe/No contesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <p>La infomacion le ha resultado util:</p>
                                     <label class="contenedor">Es de utilidad
-                                        <input type="radio" name="opt2" v-model="respuestaUtilidad" value="Utilidad Correcta"
-                                            checked="checked">
+                                        <input type="radio" name="opt2" v-model="respuestaUtilidad"
+                                            value="Utilidad Correcta" checked="checked">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">No es de utilidad
@@ -141,7 +166,8 @@
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">Ns/Nc
-                                        <input type="radio" name="opt2" v-model="respuestaUtilidad" value="No sabe/No contesta">
+                                        <input type="radio" name="opt2" v-model="respuestaUtilidad"
+                                            value="No sabe/No contesta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <p>Problemas encontrados (opcional): </p>
