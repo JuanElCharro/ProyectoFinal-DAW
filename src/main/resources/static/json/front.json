@@ -20,5 +20,22 @@
       "satisfaccion": "8"
     }
   ],
-  "informacion": []
+  "informacion": [
+    {
+      "respuesta": "InformaciÃ³n Correcta",
+      "desarrollo": "Todo correcto",
+      "id": 1
+    },
+    {
+      "respuesta": null,
+      "desarrollo": "Hay ciertas imperfecciones en su contenido, lo sabrás.",
+      "id": 2
+    },
+    {
+      "respuestaInfo": "Info Incorrecta",
+      "respuestaUtilidad": "No sabe/No contesta",
+      "desarrollo": "Se hace lo que se puede, sí",
+      "id": 3
+    }
+  ]
 }

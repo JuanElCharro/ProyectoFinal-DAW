@@ -115,22 +115,39 @@
                                 <!-- VUE -->
                                 <div id="app">
                                     <p>La infomacion mostrada es correcta:</p>
-                                    <label class="contenedor">Si
-                                        <input type="radio" name="radio" v-model="respuesta">
+                                    <label class="contenedor">Si lo es
+                                        <input type="radio" name="opt" v-model="respuestaInfo" value="Info Correcta"
+                                            checked="checked">
                                         <span class="checkmark"></span>
                                     </label>
-                                    <label class="contenedor">No
-                                        <input type="radio" name="radio" v-model="respuesta">
+                                    <label class="contenedor">No lo es
+                                        <input type="radio" name="opt" v-model="respuestaInfo"
+                                            value="Info Incorrecta">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="contenedor">Ns/Nc
-                                        <input type="radio" name="radio" checked="checked" v-model="respuesta">
+                                        <input type="radio" name="opt" v-model="respuestaInfo" value="No sabe/No contesta">
                                         <span class="checkmark"></span>
                                     </label>
-                                    <p>Problemas encontrados:</p>
-                                    <textarea v-model="desarrollo" name="txarea" id="txarea" rows="5" maxlength="500"
-                                        placeholder="Escriba el problema..."></textarea>
-                                    <button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>
+                                    <p>La infomacion le ha resultado util:</p>
+                                    <label class="contenedor">Es de utilidad
+                                        <input type="radio" name="opt2" v-model="respuestaUtilidad" value="Utilidad Correcta"
+                                            checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="contenedor">No es de utilidad
+                                        <input type="radio" name="opt2" v-model="respuestaUtilidad"
+                                            value="Utilidad Incorrecta">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="contenedor">Ns/Nc
+                                        <input type="radio" name="opt2" v-model="respuestaUtilidad" value="No sabe/No contesta">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p>Problemas encontrados (opcional): </p>
+                                    <textarea v-model="desarrollo" name="txarea" id="txarea" rows="5" maxlength="1000"
+                                        placeholder="Desarrolle el/los problemas..."></textarea>
+                                    <button id="enviarB" v-on:click="guardarFormulario(); reload();">Enviar</button>
                                 </div>
                                 <!-- VUE -->
                                 <br>
@@ -189,6 +206,9 @@
                     </div>
 
                     <%@include file="../../footer.html" %>
+                        <script>
+                            app.mount("#app");
+                        </script>
             </body>
 
             </html>
