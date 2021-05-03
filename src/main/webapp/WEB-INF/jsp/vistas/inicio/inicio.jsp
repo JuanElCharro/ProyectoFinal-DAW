@@ -102,9 +102,16 @@
                                 <hr>
 
                                 <div class="d-none d-xl-block">
-                                    <h2>Curiosidades</h2>
-                                    <h5>Tecnologias usadas en la web:</h5>
-                                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                                    <h2>La Importancia de Colaborar en el Software</h2>
+                                    <h5>Mi opinion sobre el uso y mejora de productos libres</h5>
+                                    <p>Es importante el uso y desarrollo de programas libres en todos los campos
+                                        profesionales, no solo por razones de seguridad o mejoras globales sobre
+                                        los programas, sino tambien porque facilita el soporte de los mismos. 
+                                    </p>
+                                    <p>
+                                        Del mismo modo hay que ayudar a entender a las empresas que ellas tampoco
+                                        tendran problemas o perdidas al respecto por no poseer licencia exclusiva.
+                                    </p>
                                     <hr>
                                 </div>
 
