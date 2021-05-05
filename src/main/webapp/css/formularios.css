@@ -9,6 +9,18 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+/* Fecha */
+input[type=date] {
+  width: 170px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 1em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 /* Correo Electrónico */
 input[type=email], select {
   width: 100%;
