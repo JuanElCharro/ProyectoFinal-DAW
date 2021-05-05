@@ -7,7 +7,7 @@ package com.libreApp.main.dtos;
  * @author Juan
  *
  */
-public class ProgramaDTO {
+public class AplicacionesDTO {
 	private int id_app;
 	private String nombre_app;
 	private String version;
@@ -31,7 +31,7 @@ public class ProgramaDTO {
 	 * @param id_licencia
 	 * @param id_comentario
 	 */
-	public ProgramaDTO(int id_app, String nombre_app, String version, String fecha, String link_imagen,
+	public AplicacionesDTO(int id_app, String nombre_app, String version, String fecha, String link_imagen,
 			String link_descarga, String descripcion, int id_categoria, int id_licencia, int id_comentario) {
 		super();
 		this.id_app = id_app;
