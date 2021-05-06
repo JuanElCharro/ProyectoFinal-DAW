@@ -29,6 +29,10 @@ public class LicenciasEntity {
 	@Column(name = "descripcion")
 	private String descripcion;
 
+	public LicenciasEntity() {
+		super();
+	}
+
 	/**
 	 * @param id_licencia
 	 * @param nombre_licencia

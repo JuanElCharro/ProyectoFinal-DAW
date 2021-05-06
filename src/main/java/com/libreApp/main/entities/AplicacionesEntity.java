@@ -57,8 +57,40 @@ public class AplicacionesEntity {
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "id_comentario")
 	private ComentariosEntity comentarios;
+	
+	
+	public AplicacionesEntity() {
+		super();
+	}
 
 	/**
+	 * Constructor SIN comentarios
+	 * @param id_app
+	 * @param nombre_app
+	 * @param version
+	 * @param fecha
+	 * @param link_imagen
+	 * @param link_descarga
+	 * @param descripcion
+	 * @param categorias
+	 * @param licencias
+	 */
+	public AplicacionesEntity(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion, CategoriasEntity categorias, LicenciasEntity licencias) {
+		super();
+		this.id_app = id_app;
+		this.nombre_app = nombre_app;
+		this.version = version;
+		this.fecha = fecha;
+		this.link_imagen = link_imagen;
+		this.link_descarga = link_descarga;
+		this.descripcion = descripcion;
+		this.categorias = categorias;
+		this.licencias = licencias;
+	}
+
+	/**
+	 * Constructor CON comentarios
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version

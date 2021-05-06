@@ -26,6 +26,11 @@ public class CategoriasEntity {
 	
 	@Column(name = "nombre_categoria")
 	private String nombre_categoria;
+	
+
+	public CategoriasEntity() {
+		super();
+	}
 
 	/**
 	 * @param id_categoria

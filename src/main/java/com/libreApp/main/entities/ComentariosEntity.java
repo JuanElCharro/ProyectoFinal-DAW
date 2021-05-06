@@ -26,6 +26,10 @@ public class ComentariosEntity {
 	@Column(name = "comentario")
 	private String comentario;
 
+	public ComentariosEntity() {
+		super();
+	}
+
 	/**
 	 * @param id_comentario
 	 * @param comentario
