@@ -53,6 +53,7 @@ public class AplicacionesController {
 		model.addAttribute("lista", appImpl.insertarAplicacion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria, id_licencia));
 		model.addAttribute("listaCategorias", combosDao.comboCategorias());
 		model.addAttribute("listaLicencias", combosDao.comboLicencias());
+		model.addAttribute("resultado", 1);
 		
 		return "vistas/programas/crearPrograma";
 	}
