@@ -69,8 +69,8 @@
 											<label for="categorias">Categoria de la App:</label>
 											<select class="form-control" name="categorias" form="formulario">
 												<c:forEach items="${listaCategorias}" var="categorias">
-													<option value="${categorias.id_categoria}">
-														${categorias.nombre_categoria} </option>
+													<option value="${categorias.id}">
+														${categorias.id}-${categorias.descripcion} </option>
 												</c:forEach>
 											</select>
 										</div>
@@ -78,19 +78,21 @@
 											<label for="licencias">Tipo de licencia:</label>
 											<select class="form-control" name="licencias" form="formulario">
 												<c:forEach items="${listaLicencias}" var="licencias">
-													<option value="${licencias.id_licencia}">
-														${licencias.nombre_licencia} </option>
+													<option value="${licencias.id}">
+														${licencias.id}-${licencias.descripcion} </option>
 												</c:forEach>
 											</select>
 										</div>
 									</div>
+
 									<br>
 									<input type="submit" class="btn btn-primary col-12" value="Insertar">
-									<hr>
-									<c:if test="${resultado == 1}">
-										<h2>App insertada correctamente</h2>
-									</c:if>
 								</form>
+								<hr>
+								<c:if test="${resultado == 1}">
+									<h3>App insertada correctamente</h3>
+								</c:if>
+
 							</div>
 						</div>
 
