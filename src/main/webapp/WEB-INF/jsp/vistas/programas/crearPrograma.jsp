@@ -86,7 +86,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6">
+										<div class="col-lg-6 col-sm-6">
 											<label for="categorias">Categoria de la App:</label>
 											<select class="form-control" name="categorias" form="formulario">
 												<c:forEach items="${listaCategorias}" var="categorias">
