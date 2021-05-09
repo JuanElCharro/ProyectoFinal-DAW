@@ -24,7 +24,6 @@ import javax.persistence.Table;
 public class AplicacionesEntity {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "nombre_app")
 	private String nombre_app;
 	

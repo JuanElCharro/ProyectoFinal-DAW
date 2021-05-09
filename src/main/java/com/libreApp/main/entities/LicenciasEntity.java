@@ -18,8 +18,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "licencias")
 public class LicenciasEntity {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_licencia")
 	private Integer id_licencia;
 	
