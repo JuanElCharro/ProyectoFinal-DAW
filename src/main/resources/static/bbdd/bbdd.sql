@@ -19,31 +19,30 @@ CREATE TABLE `libreapp`.`licencias` (
   PRIMARY KEY (`id_licencia`)
   )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-DROP TABLE IF EXISTS `comentarios`;
+DROP TABLE IF EXISTS `valoraciones`;
 
-CREATE TABLE `libreapp`.`comentarios` (
-  `id_comentario` INT NOT NULL,
-  `comentario` VARCHAR(500) NULL,
-  PRIMARY KEY (`id_comentario`)
+CREATE TABLE `libreapp`.`valoraciones` (
+  `id_valoracion` INT NOT NULL AUTO_INCREMENT,
+  `valores` VARCHAR(5) NULL,
+  PRIMARY KEY (`id_valoracion`)
   )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 DROP TABLE IF EXISTS `aplicaciones`;
 
 CREATE TABLE `libreapp`.`aplicaciones` (
-  `id_app` INT NOT NULL AUTO_INCREMENT,
   `nombre_app` VARCHAR(45) NOT NULL,
-  `version` VARCHAR(5) NOT NULL,
-  `fecha` date NOT NULL,
+  `version` VARCHAR(5) NULL,
+  `fecha` date NULL,
   `link_imagen` VARCHAR(100) NULL,
-  `link_descarga` VARCHAR(100) NOT NULL,
-  `descripcion` VARCHAR(500) NOT NULL,
+  `link_descarga` VARCHAR(100) NULL,
+  `descripcion` VARCHAR(500) NULL,
   `id_categoria` INT NOT NULL,
   `id_licencia` INT NOT NULL,
-  `id_comentario` INT NULL,
-  PRIMARY KEY (`id_app`),
+  `id_valoracion` INT NULL,
+  PRIMARY KEY (`nombre_app`),
   CONSTRAINT `id_categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`),
   CONSTRAINT `id_licencia` FOREIGN KEY (`id_licencia`) REFERENCES `licencias` (`id_licencia`),
-  CONSTRAINT `id_comentario` FOREIGN KEY (`id_comentario`) REFERENCES `comentarios` (`id_comentario`)
+  CONSTRAINT `id_valoracion` FOREIGN KEY (`id_valoracion`) REFERENCES `valoraciones` (`id_valoracion`)
   )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
   
 INSERT INTO `libreapp`.`categorias` (`id_categoria`, `nombre_categoria`) VALUES ('1', 'Desarrollo de Aplicaciones');
@@ -63,8 +62,14 @@ INSERT INTO `libreapp`.`licencias` (`id_licencia`, `nombre_licencia`, `descripci
 INSERT INTO `libreapp`.`licencias` (`id_licencia`, `nombre_licencia`, `descripcion`) VALUES ('4', 'Mozilla Public License', 'https://www.mozilla.org/en-US/MPL/2.0/');
 INSERT INTO `libreapp`.`licencias` (`id_licencia`, `nombre_licencia`, `descripcion`) VALUES ('5', 'MIT license', 'https://mit-license.org/');
 
-INSERT INTO `libreapp`.`aplicaciones` (`id_app`, `nombre_app`, `version`, `fecha`, `link_imagen`, `link_descarga`, `descripcion`, `id_categoria`, `id_licencia`) VALUES ('1', 'LibreOffice', '7.0.5', '2021/05/05', 'https://image.flaticon.com/icons/png/512/23/23666.png', 'https://es.libreoffice.org/descarga/libreoffice/', 'LibreOffice es una suite ofimática completa compuesta de procesador de textos, hoja de cálculo, presentaciones, programa de dibujo, base de datos y editor de ecuaciones.', '2', '2');
-INSERT INTO `libreapp`.`aplicaciones` (`id_app`, `nombre_app`, `version`, `fecha`, `link_imagen`, `link_descarga`, `descripcion`, `id_categoria`, `id_licencia`) VALUES ('2', 'Code::Blocks', '20.03', '2020/04/03', 'https://www.codeblocks.org/images/logo160.png', 'http://www.codeblocks.org/downloads/binaries/', 'Code::Blocks es un IDE (entorno de desarrollo integrado) de C/C++, que permite utilizar varios compiladores a elección del usuario (GNU GCC, MinGW GCC, MS Visual C++, clang, Borland C++ 5.5, Open Watcom, etc., que deben instalarse por separado). Esta versión incluye MinGW-W64.', '1', '2');
+INSERT INTO `libreapp`.`valoraciones` (`id_valoracion`, `valores`) VALUES ('1', '1/5');
+INSERT INTO `libreapp`.`valoraciones` (`id_valoracion`, `valores`) VALUES ('2', '2/5');
+INSERT INTO `libreapp`.`valoraciones` (`id_valoracion`, `valores`) VALUES ('3', '3/5');
+INSERT INTO `libreapp`.`valoraciones` (`id_valoracion`, `valores`) VALUES ('4', '4/5');
+INSERT INTO `libreapp`.`valoraciones` (`id_valoracion`, `valores`) VALUES ('5', '5/5');
+
+INSERT INTO `libreapp`.`aplicaciones` (`nombre_app`, `version`, `fecha`, `link_imagen`, `link_descarga`, `descripcion`, `id_categoria`, `id_licencia`) VALUES ('LibreOffice', '7.0.5', '2021/05/05', 'https://image.flaticon.com/icons/png/512/23/23666.png', 'https://es.libreoffice.org/descarga/libreoffice/', 'LibreOffice es una suite ofimática completa compuesta de procesador de textos, hoja de cálculo, presentaciones, programa de dibujo, base de datos y editor de ecuaciones.', '2', '2');
+INSERT INTO `libreapp`.`aplicaciones` (`nombre_app`, `version`, `fecha`, `link_imagen`, `link_descarga`, `descripcion`, `id_categoria`, `id_licencia`) VALUES ('Code::Blocks', '20.03', '2020/04/03', 'https://www.codeblocks.org/images/logo160.png', 'http://www.codeblocks.org/downloads/binaries/', 'Code::Blocks es un IDE (entorno de desarrollo integrado) de C/C++, que permite utilizar varios compiladores a elección del usuario (GNU GCC, MinGW GCC, MS Visual C++, clang, Borland C++ 5.5, Open Watcom, etc., que deben instalarse por separado). Esta versión incluye MinGW-W64.', '1', '2');
 
 
 SET @@global.time_zone = '+01:00';

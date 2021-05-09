@@ -25,9 +25,6 @@ public class AplicacionesEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_app")
-	private Integer id_app;
-	
 	@Column(name = "nombre_app")
 	private String nombre_app;
 	
@@ -55,17 +52,14 @@ public class AplicacionesEntity {
 	private LicenciasEntity licencias;
 	
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-	@JoinColumn(name = "id_comentario")
-	private ComentariosEntity comentarios;
-	
+	@JoinColumn(name = "id_valoracion")
+	private ValoracionesEntity valoraciones;
 	
 	public AplicacionesEntity() {
 		super();
 	}
 
 	/**
-	 * Constructor SIN comentarios
-	 * @param id_app
 	 * @param nombre_app
 	 * @param version
 	 * @param fecha
@@ -74,11 +68,12 @@ public class AplicacionesEntity {
 	 * @param descripcion
 	 * @param categorias
 	 * @param licencias
+	 * @param valoraciones
 	 */
-	public AplicacionesEntity(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, CategoriasEntity categorias, LicenciasEntity licencias) {
+	public AplicacionesEntity(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+			String descripcion, CategoriasEntity categorias, LicenciasEntity licencias,
+			ValoracionesEntity valoraciones) {
 		super();
-		this.id_app = id_app;
 		this.nombre_app = nombre_app;
 		this.version = version;
 		this.fecha = fecha;
@@ -87,49 +82,7 @@ public class AplicacionesEntity {
 		this.descripcion = descripcion;
 		this.categorias = categorias;
 		this.licencias = licencias;
-	}
-
-	/**
-	 * Constructor CON comentarios
-	 * @param id_app
-	 * @param nombre_app
-	 * @param version
-	 * @param fecha
-	 * @param link_imagen
-	 * @param link_descarga
-	 * @param descripcion
-	 * @param categorias
-	 * @param licencias
-	 * @param comentarios
-	 */
-	public AplicacionesEntity(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, CategoriasEntity categorias, LicenciasEntity licencias,
-			ComentariosEntity comentarios) {
-		super();
-		this.id_app = id_app;
-		this.nombre_app = nombre_app;
-		this.version = version;
-		this.fecha = fecha;
-		this.link_imagen = link_imagen;
-		this.link_descarga = link_descarga;
-		this.descripcion = descripcion;
-		this.categorias = categorias;
-		this.licencias = licencias;
-		this.comentarios = comentarios;
-	}
-
-	/**
-	 * @return the id_app
-	 */
-	public Integer getId_app() {
-		return id_app;
-	}
-
-	/**
-	 * @param id_app the id_app to set
-	 */
-	public void setId_app(Integer id_app) {
-		this.id_app = id_app;
+		this.valoraciones = valoraciones;
 	}
 
 	/**
@@ -245,18 +198,18 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * @return the comentarios
+	 * @return the valoraciones
 	 */
-	public ComentariosEntity getComentarios() {
-		return comentarios;
+	public ValoracionesEntity getValoraciones() {
+		return valoraciones;
 	}
 
 	/**
-	 * @param comentarios the comentarios to set
+	 * @param valoraciones the valoraciones to set
 	 */
-	public void setComentarios(ComentariosEntity comentarios) {
-		this.comentarios = comentarios;
+	public void setValoraciones(ValoracionesEntity valoraciones) {
+		this.valoraciones = valoraciones;
 	}
-	
+
 	
 }

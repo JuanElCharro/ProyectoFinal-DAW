@@ -11,11 +11,13 @@ import org.springframework.stereotype.Service;
 
 import com.libreApp.main.dao.CombosDAO;
 import com.libreApp.main.dtos.CombosDTO;
+import com.libreApp.main.entities.AplicacionesEntity;
 import com.libreApp.main.entities.CategoriasEntity;
-import com.libreApp.main.entities.ComentariosEntity;
+import com.libreApp.main.entities.ValoracionesEntity;
 import com.libreApp.main.entities.LicenciasEntity;
+import com.libreApp.main.repositorios.AplicacionesRepository;
 import com.libreApp.main.repositorios.CategoriasRepository;
-import com.libreApp.main.repositorios.ComentariosRepository;
+import com.libreApp.main.repositorios.ValoracionesRepository;
 import com.libreApp.main.repositorios.LicenciasRepository;
 
 /**
@@ -33,7 +35,7 @@ public class CombosDAOimpl implements CombosDAO{
 	private CategoriasRepository categoriasRepository; 
 	
 	@Autowired
-	private ComentariosRepository comentariosRepository; 
+	private ValoracionesRepository valoracionesRepository; 
 
 	@Override
 	public List<CombosDTO> comboLicencias() {
@@ -50,10 +52,10 @@ public class CombosDAOimpl implements CombosDAO{
 	}
 
 	@Override
-	public List<CombosDTO> comboComentarios() {
-		Iterable<ComentariosEntity> listaEntidadesComentarios = comentariosRepository.findAll();
-		List<CombosDTO> listaComentarios = mapeoEntidadComentariosComboDTO(listaEntidadesComentarios);
-		return listaComentarios;
+	public List<CombosDTO> comboValoraciones() {
+		Iterable<ValoracionesEntity> listaEntidadesValoraciones = valoracionesRepository.findAll();
+		List<CombosDTO> listaValoraciones = mapeoEntidadValoracionesComboDTO(listaEntidadesValoraciones);
+		return listaValoraciones;
 	}
 	
 	//Recoger solo algunos campos
@@ -74,11 +76,12 @@ public class CombosDAOimpl implements CombosDAO{
 		return listaCategorias;
 	}
 	
-	private List<CombosDTO> mapeoEntidadComentariosComboDTO(Iterable<ComentariosEntity> lista){
-		List<CombosDTO> listaComentarios = new ArrayList<CombosDTO>();
-		for (ComentariosEntity m : lista) {
-			listaComentarios.add(new CombosDTO(m.getId_comentario(), m.getComentario()));
+	private List<CombosDTO> mapeoEntidadValoracionesComboDTO(Iterable<ValoracionesEntity> lista){
+		List<CombosDTO> listaValoraciones = new ArrayList<CombosDTO>();
+		for (ValoracionesEntity m : lista) {
+			listaValoraciones.add(new CombosDTO(m.getId_valoracion(), m.getValores()));
 		}
-		return listaComentarios;
+		return listaValoraciones;
 	}
+
 }

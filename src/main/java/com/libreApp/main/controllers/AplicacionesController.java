@@ -34,13 +34,13 @@ public class AplicacionesController {
 	public String mostrarCrearPrograma(ModelMap model) {
 		model.addAttribute("listaCategorias", combosDao.comboCategorias());
 		model.addAttribute("listaLicencias", combosDao.comboLicencias());
+		model.addAttribute("listaValoraciones", combosDao.comboValoraciones());
 		return "vistas/programas/crearPrograma";
 	}
 	
 	@PostMapping(value = "crearPrograma")
 	public String crearPrograma(
-			@RequestParam(value = "id_app", required = false) int id_app,
-			@RequestParam(value = "nombre_app") String nombre_app,
+			@RequestParam(value = "nombre_app", required = false) String nombre_app,
 			@RequestParam(value = "version", required = false) String version,
 			@RequestParam(value = "fecha", required = false) String fecha,
 			@RequestParam(value = "link_imagen", required = false) String link_imagen,
@@ -48,11 +48,13 @@ public class AplicacionesController {
 			@RequestParam(value = "descripcion", required = false) String descripcion,
 			@RequestParam(value = "categorias") Integer id_categoria,
 			@RequestParam(value = "licencias") Integer id_licencia,
+			@RequestParam(value = "valoraciones") Integer id_valoracion,
 		ModelMap model) {
 		
-		model.addAttribute("resultado", appImpl.insertarAplicacion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria, id_licencia));
+		model.addAttribute("resultado", appImpl.insertarAplicacion(nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria, id_licencia, id_valoracion));
 		model.addAttribute("listaCategorias", combosDao.comboCategorias());
 		model.addAttribute("listaLicencias", combosDao.comboLicencias());
+		model.addAttribute("listaValoraciones", combosDao.comboValoraciones());
 		
 		return "vistas/programas/crearPrograma";
 	}

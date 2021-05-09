@@ -14,5 +14,5 @@ import com.libreApp.main.dtos.CombosDTO;
 public interface CombosDAO {
 	List<CombosDTO> comboLicencias();
 	List<CombosDTO> comboCategorias();
-	List<CombosDTO> comboComentarios();
+	List<CombosDTO> comboValoraciones();
 }

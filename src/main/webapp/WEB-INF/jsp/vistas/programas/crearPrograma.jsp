@@ -39,14 +39,14 @@
 									<div class="row">
 										<div class="col-12">
 											<label for="nombre_app">Nombre:</label>
-											<input type="text" class="form-control" id="nombre_app" name="nombre_app">
+											<input type="text" class="form-control" id="nombre_app" name="nombre_app" maxlength="45">
 										</div>
 									</div>
 
 									<div class="row">
 										<div class="col-6">
 											<label for="version">Version del programa:</label>
-											<input type="text" class="form-control" id="version" name="version">
+											<input type="text" class="form-control" id="version" name="version" maxlength="5">
 										</div>
 										<div class="col-6">
 											<label for="fecha">Fecha ultima version:</label>
@@ -55,13 +55,13 @@
 									</div>
 
 									<label for="link_imagen">Link de la imagen:</label>
-									<input type="text" class="form-control" id="link_imagen" name="link_imagen">
+									<input type="text" class="form-control" id="link_imagen" name="link_imagen" maxlength="45">
 									<label for="link_descarga">Link de descarga:</label>
-									<input type="text" class="form-control" id="link_descarga" name="link_descarga">
+									<input type="text" class="form-control" id="link_descarga" name="link_descarga" maxlength="45">
 
 									<div class="form-group">
 										<label for="descripcion">Descripcion:</label>
-										<textarea class="form-control" id="descripcion" rows="3"></textarea>
+										<textarea class="form-control" id="descripcion" rows="3" maxlength="500"></textarea>
 									</div>
 
 									<div class="row">
@@ -70,16 +70,25 @@
 											<select class="form-control" name="categorias" form="formulario">
 												<c:forEach items="${listaCategorias}" var="categorias">
 													<option value="${categorias.id}">
-														${categorias.id}-${categorias.descripcion} </option>
+														${categorias.id} - ${categorias.descripcion} </option>
 												</c:forEach>
 											</select>
 										</div>
-										<div class="col-6">
+										<div class="col-lg-3 col-sm-6">
 											<label for="licencias">Tipo de licencia:</label>
 											<select class="form-control" name="licencias" form="formulario">
 												<c:forEach items="${listaLicencias}" var="licencias">
 													<option value="${licencias.id}">
-														${licencias.id}-${licencias.descripcion} </option>
+														${licencias.id} - ${licencias.descripcion} </option>
+												</c:forEach>
+											</select>
+										</div>
+										<div class="col-lg-3 col-sm-12">
+											<label for="valoraciones">Valoracion:</label>
+											<select class="form-control" name="valoraciones" form="formulario">
+												<c:forEach items="${listaValoraciones}" var="valoraciones">
+													<option value="${valoraciones.id}">
+														${valoraciones.id} - ${valoraciones.descripcion} </option>
 												</c:forEach>
 											</select>
 										</div>

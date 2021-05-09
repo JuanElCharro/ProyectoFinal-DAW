@@ -6,7 +6,7 @@ package com.libreApp.main.repositorios;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.libreApp.main.entities.ComentariosEntity;
+import com.libreApp.main.entities.ValoracionesEntity;
 
 /**
  * @author Juan
@@ -14,6 +14,6 @@ import com.libreApp.main.entities.ComentariosEntity;
  */
 
 @Repository
-public interface ComentariosRepository extends CrudRepository<ComentariosEntity, Integer>{
+public interface ValoracionesRepository extends CrudRepository<ValoracionesEntity, Integer>{
 	
 }

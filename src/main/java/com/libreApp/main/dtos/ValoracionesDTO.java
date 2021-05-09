@@ -7,51 +7,50 @@ package com.libreApp.main.dtos;
  * @author Juan
  *
  */
-public class ComentariosDTO {
-	private int id_comentario;
-	private String comentario;
-	
-	/**
-	 * @param id_comentario
-	 * @param comentario
-	 */
-	public ComentariosDTO(int id_comentario, String comentario) {
+public class ValoracionesDTO {
+	private int id_valoracion;
+	private String valores;
+
+	public ValoracionesDTO() {
 		super();
-		this.id_comentario = id_comentario;
-		this.comentario = comentario;
 	}
 
 	/**
-	 * @return the id_comentario
+	 * @param id_valoracion
+	 * @param valores
 	 */
-	public int getId_comentario() {
-		return id_comentario;
+	public ValoracionesDTO(int id_valoracion, String valores) {
+		super();
+		this.id_valoracion = id_valoracion;
+		this.valores = valores;
 	}
 
 	/**
-	 * @param id_comentario the id_comentario to set
+	 * @return the id_valoracion
 	 */
-	public void setId_comentario(int id_comentario) {
-		this.id_comentario = id_comentario;
+	public int getId_valoracion() {
+		return id_valoracion;
 	}
 
 	/**
-	 * @return the comentario
+	 * @param id_valoracion the id_valoracion to set
 	 */
-	public String getComentario() {
-		return comentario;
+	public void setId_valoracion(int id_valoracion) {
+		this.id_valoracion = id_valoracion;
 	}
 
 	/**
-	 * @param comentario the comentario to set
+	 * @return the valores
 	 */
-	public void setComentario(String comentario) {
-		this.comentario = comentario;
+	public String getValores() {
+		return valores;
 	}
 
-	@Override
-	public String toString() {
-		return "ComentariosDTO [id_comentario=" + id_comentario + ", comentario=" + comentario + "]";
+	/**
+	 * @param valores the valores to set
+	 */
+	public void setValores(String valores) {
+		this.valores = valores;
 	}
 	
 	

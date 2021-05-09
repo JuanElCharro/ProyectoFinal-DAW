@@ -16,57 +16,57 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "comentarios")
-public class ComentariosEntity {
+@Table(name = "valoraciones")
+public class ValoracionesEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_comentario")
-	private Integer id_comentario;
+	@Column(name = "id_valoracion")
+	private Integer id_valoracion;
 	
-	@Column(name = "comentario")
-	private String comentario;
+	@Column(name = "valores")
+	private String valores;
 
-	public ComentariosEntity() {
+	public ValoracionesEntity() {
 		super();
 	}
 
 	/**
-	 * @param id_comentario
-	 * @param comentario
+	 * @param id_valoracion
+	 * @param valores
 	 */
-	public ComentariosEntity(Integer id_comentario, String comentario) {
+	public ValoracionesEntity(Integer id_valoracion, String valores) {
 		super();
-		this.id_comentario = id_comentario;
-		this.comentario = comentario;
+		this.id_valoracion = id_valoracion;
+		this.valores = valores;
 	}
 
 	/**
-	 * @return the id_comentario
+	 * @return the id_valoracion
 	 */
-	public Integer getId_comentario() {
-		return id_comentario;
+	public Integer getId_valoracion() {
+		return id_valoracion;
 	}
 
 	/**
-	 * @param id_comentario the id_comentario to set
+	 * @param id_valoracion the id_valoracion to set
 	 */
-	public void setId_comentario(Integer id_comentario) {
-		this.id_comentario = id_comentario;
+	public void setId_valoracion(Integer id_valoracion) {
+		this.id_valoracion = id_valoracion;
 	}
 
 	/**
-	 * @return the comentario
+	 * @return the valores
 	 */
-	public String getComentario() {
-		return comentario;
+	public String getValores() {
+		return valores;
 	}
 
 	/**
-	 * @param comentario the comentario to set
+	 * @param valores the valores to set
 	 */
-	public void setComentario(String comentario) {
-		this.comentario = comentario;
+	public void setValores(String valores) {
+		this.valores = valores;
 	}
-	
+
 	
 }

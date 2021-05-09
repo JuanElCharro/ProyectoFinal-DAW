@@ -8,7 +8,6 @@ package com.libreApp.main.dtos;
  *
  */
 public class AplicacionesDTO {
-	private int id_app;
 	private String nombre_app;
 	private String version;
 	private String fecha;
@@ -17,13 +16,13 @@ public class AplicacionesDTO {
 	private String descripcion;
 	private int id_categoria;
 	private int id_licencia;
-	private int id_comentario;
+	private int id_valoracion;
 	
-	
-	
+	public AplicacionesDTO() {
+		super();
+	}
+
 	/**
-	 * Constructor SIN comentarios
-	 * @param id_app
 	 * @param nombre_app
 	 * @param version
 	 * @param fecha
@@ -32,11 +31,11 @@ public class AplicacionesDTO {
 	 * @param descripcion
 	 * @param id_categoria
 	 * @param id_licencia
+	 * @param id_valoracion
 	 */
-	public AplicacionesDTO(int id_app, String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, int id_categoria, int id_licencia) {
+	public AplicacionesDTO(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+			String descripcion, int id_categoria, int id_licencia, int id_valoracion) {
 		super();
-		this.id_app = id_app;
 		this.nombre_app = nombre_app;
 		this.version = version;
 		this.fecha = fecha;
@@ -45,48 +44,7 @@ public class AplicacionesDTO {
 		this.descripcion = descripcion;
 		this.id_categoria = id_categoria;
 		this.id_licencia = id_licencia;
-	}
-
-	/**
-	 * Constructor CON comentarios
-	 * @param id_app
-	 * @param nombre_app
-	 * @param version
-	 * @param fecha
-	 * @param link_imagen
-	 * @param link_descarga
-	 * @param descripcion
-	 * @param id_categoria
-	 * @param id_licencia
-	 * @param id_comentario
-	 */
-	public AplicacionesDTO(int id_app, String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, int id_categoria, int id_licencia, int id_comentario) {
-		super();
-		this.id_app = id_app;
-		this.nombre_app = nombre_app;
-		this.version = version;
-		this.fecha = fecha;
-		this.link_imagen = link_imagen;
-		this.link_descarga = link_descarga;
-		this.descripcion = descripcion;
-		this.id_categoria = id_categoria;
-		this.id_licencia = id_licencia;
-		this.id_comentario = id_comentario;
-	}
-
-	/**
-	 * @return the id_app
-	 */
-	public int getId_app() {
-		return id_app;
-	}
-
-	/**
-	 * @param id_app the id_app to set
-	 */
-	public void setId_app(int id_app) {
-		this.id_app = id_app;
+		this.id_valoracion = id_valoracion;
 	}
 
 	/**
@@ -202,26 +160,18 @@ public class AplicacionesDTO {
 	}
 
 	/**
-	 * @return the id_comentario
+	 * @return the id_valoracion
 	 */
-	public int getId_comentario() {
-		return id_comentario;
+	public int getId_valoracion() {
+		return id_valoracion;
 	}
 
 	/**
-	 * @param id_comentario the id_comentario to set
+	 * @param id_valoracion the id_valoracion to set
 	 */
-	public void setId_comentario(int id_comentario) {
-		this.id_comentario = id_comentario;
+	public void setId_valoracion(int id_valoracion) {
+		this.id_valoracion = id_valoracion;
 	}
 
-	@Override
-	public String toString() {
-		return "ProgramaDTO [id_app=" + id_app + ", nombre_app=" + nombre_app + ", version=" + version + ", fecha="
-				+ fecha + ", link_imagen=" + link_imagen + ", link_descarga=" + link_descarga + ", descripcion="
-				+ descripcion + ", id_categoria=" + id_categoria + ", id_licencia=" + id_licencia + ", id_comentario="
-				+ id_comentario + "]";
-	}
-	
 	
 }

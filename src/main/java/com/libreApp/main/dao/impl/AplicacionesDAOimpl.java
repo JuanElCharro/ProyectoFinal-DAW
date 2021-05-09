@@ -5,6 +5,7 @@ package com.libreApp.main.dao.impl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,9 +17,10 @@ import com.libreApp.main.dtos.AplicacionesDTO;
 import com.libreApp.main.entities.AplicacionesEntity;
 import com.libreApp.main.entities.CategoriasEntity;
 import com.libreApp.main.entities.LicenciasEntity;
+import com.libreApp.main.entities.ValoracionesEntity;
 import com.libreApp.main.repositorios.AplicacionesRepository;
 import com.libreApp.main.repositorios.CategoriasRepository;
-import com.libreApp.main.repositorios.ComentariosRepository;
+import com.libreApp.main.repositorios.ValoracionesRepository;
 import com.libreApp.main.repositorios.LicenciasRepository;
 
 /**
@@ -36,20 +38,20 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	private CategoriasRepository categoriasRepository;
 	
 	@Autowired
-	private ComentariosRepository comentariosRepository;
+	private ValoracionesRepository valoracionesRepository;
 	
 	@Autowired
 	private LicenciasRepository licenciasRepository;
 
 	@Override
-	public List<AplicacionesDTO> obtenerAplicacionPorIdNombre(Integer id_app, String nombre_app) {
+	public List<AplicacionesDTO> obtenerAplicacionPorIdNombre(String nombre_app) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
 	@Override
-	public Integer insertarAplicacion(int id_app, String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, int id_categoria, int id_licencia) {
+	public Integer insertarAplicacion(String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion) {
 		
 		if (fecha == "") {
 			Date cDate = new Date();
@@ -60,11 +62,14 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 		Optional<CategoriasEntity> a = categoriasRepository.findById(id_categoria);
 		CategoriasEntity categoria = a.get();
 		
-		Optional<LicenciasEntity> b = licenciasRepository.findById(id_categoria);
+		Optional<LicenciasEntity> b = licenciasRepository.findById(id_licencia);
 		LicenciasEntity licencia = b.get();
 		
+		Optional<ValoracionesEntity> c = valoracionesRepository.findById(id_valoracion);
+		ValoracionesEntity valoracion = c.get();
+		
 		//Creamos el objeto Aplicación con los valores insertados
-		AplicacionesEntity aplicacion = new AplicacionesEntity(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, categoria, licencia);
+		AplicacionesEntity aplicacion = new AplicacionesEntity(nombre_app, version, fecha, link_imagen, link_descarga, descripcion, categoria, licencia, valoracion);
 		
 		//Guardamos el objeto
 		aplicacionesRepository.save(aplicacion);
@@ -73,14 +78,14 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	}
 
 	@Override
-	public Integer actualizarAplicacion(int id_app, String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, int id_categoria, int id_licencia) {
+	public Integer actualizarAplicacion(String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Integer eliminarAplicacion(Integer id_app) {
+	public Integer eliminarAplicacion(String nombre_app) {
 		// TODO Auto-generated method stub
 		return null;
 	}
