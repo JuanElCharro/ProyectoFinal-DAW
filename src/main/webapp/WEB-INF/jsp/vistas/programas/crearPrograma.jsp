@@ -50,7 +50,7 @@
 										<div class="col-12">
 											<label for="nombre_app">Nombre:</label>
 											<input type="text" class="form-control" id="nombre_app" name="nombre_app"
-												maxlength="45">
+												placeholder="Ej: LibreOffice..." maxlength="45">
 										</div>
 									</div>
 
@@ -58,7 +58,7 @@
 										<div class="col-6">
 											<label for="version">Version del programa:</label>
 											<input type="text" class="form-control" id="version" name="version"
-												maxlength="5">
+												placeholder="Ej: v3.5" maxlength="5">
 										</div>
 										<div class="col-6">
 											<label for="fecha">Fecha ultima version:</label>
@@ -66,17 +66,23 @@
 										</div>
 									</div>
 
-									<label for="link_imagen">Link de la imagen:</label>
-									<input type="text" class="form-control" id="link_imagen" name="link_imagen"
-										maxlength="45">
-									<label for="link_descarga">Link de descarga:</label>
-									<input type="text" class="form-control" id="link_descarga" name="link_descarga"
-										maxlength="45">
+									<div class="row">
+										<div class="col-6">
+											<label for="link_imagen">Link de la imagen:</label>
+											<input type="url" class="form-control" id="link_imagen" name="link_imagen"
+												placeholder="https://www...." maxlength="45">
+										</div>
+										<div class="col-6">
+											<label for="link_descarga">Link de descarga:</label>
+											<input type="url" class="form-control" id="link_descarga"
+												name="link_descarga" placeholder="https://www...." maxlength="45">
+										</div>
+									</div>
 
 									<div class="form-group">
 										<label for="descripcion">Descripcion:</label>
-										<textarea class="form-control" id="descripcion" rows="3"
-											maxlength="500"></textarea>
+										<input type="text" class="form-control" id="descripcion"
+											placeholder="Breve descripcion del programa..." maxlength="500"></input>
 									</div>
 
 									<div class="row">
@@ -112,8 +118,7 @@
 									<br>
 									<input type="submit" class="btn btn-primary col-12" value="Insertar">
 								</form>
-								<hr>
-
+								<br>
 							</div>
 						</div>
 
