@@ -30,16 +30,6 @@
 						</div>
 					</div>
 
-					<c:if test="${resultado == 1}">
-						<div id="tarjetasBienvenido" class="col-12">
-							<div class="card text-white bg-success">
-								<div class="card-body">
-									<h3 class="card-title">Programa insertado correctamente.</h3>
-								</div>
-							</div>
-						</div>
-					</c:if>
-
 					<div class="container" style="margin-top:30px">
 						<div class="col-12">
 							<div class="form-group">
@@ -79,11 +69,18 @@
 										</div>
 									</div>
 
-									<div class="form-group">
-										<label for="descripcion">Descripcion:</label>
-										<input type="text" class="form-control" id="descripcion"
-											placeholder="Breve descripcion del programa..." maxlength="500"></input>
+									<div class="row">
+										<div class="col-12">
+											<label for="descripcion">Descripcion:</label>
+											<!-- 
+												<input type="text" class="form-control" id="descripcion" name="descripcion"
+												placeholder="Breve descripcion del programa..." maxlength="500">
+											 -->
+											<textarea class="form-control" name="descripcion" id="descripcion" rows="3"
+												placeholder="Breve descripcion del programa..." maxlength="500"></textarea>
+										</div>
 									</div>
+
 
 									<div class="row">
 										<div class="col-lg-6 col-sm-6">
@@ -118,7 +115,16 @@
 									<br>
 									<input type="submit" class="btn btn-primary col-12" value="Insertar">
 								</form>
-								<br>
+								<c:if test="${resultado == 1}">
+									<hr>
+									<div id="tarjetasBienvenido" class="col-12">
+										<div class="card text-white bg-success">
+											<div class="card-body">
+												<h3 class="card-title">Programa insertado correctamente.</h3>
+											</div>
+										</div>
+									</div>
+								</c:if>
 							</div>
 						</div>
 
