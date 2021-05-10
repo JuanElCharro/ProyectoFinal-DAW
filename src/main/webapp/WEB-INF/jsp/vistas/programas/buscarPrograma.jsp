@@ -19,8 +19,12 @@
 	<body>
 		<%@include file="../../menu.html" %>
 
-		<div class="container" style="margin-top:30px">
-			<h1>Buscar Programa</h1>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Buscar una App</h1>
+				<p class="lead">Encuentre el programa que se adapta a tus necesidades.
+				</p>
+			</div>
 		</div>
 
 		<%@include file="../../footer.html" %>

@@ -72,12 +72,9 @@
 									<div class="row">
 										<div class="col-12">
 											<label for="descripcion">Descripcion:</label>
-											<!-- 
-												<input type="text" class="form-control" id="descripcion" name="descripcion"
-												placeholder="Breve descripcion del programa..." maxlength="500">
-											 -->
 											<textarea class="form-control" name="descripcion" id="descripcion" rows="3"
-												placeholder="Breve descripcion del programa..." maxlength="500"></textarea>
+												placeholder="Breve descripcion del programa..."
+												maxlength="500"></textarea>
 										</div>
 									</div>
 
@@ -115,8 +112,8 @@
 									<br>
 									<input type="submit" class="btn btn-primary col-12" value="Insertar">
 								</form>
+								<hr>
 								<c:if test="${resultado == 1}">
-									<hr>
 									<div id="tarjetasBienvenido" class="col-12">
 										<div class="card text-white bg-success">
 											<div class="card-body">
