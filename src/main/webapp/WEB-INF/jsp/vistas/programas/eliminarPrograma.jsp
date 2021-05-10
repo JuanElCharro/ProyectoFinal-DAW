@@ -19,8 +19,12 @@
 	<body>
 		<%@include file="../../menu.html" %>
 
-		<div class="container" style="margin-top:30px">
-			<h1>Eliminar Programa</h1>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Eliminar una App del registro</h1>
+				<p class="lead">Elimine un programa de la base de datos.
+				</p>
+			</div>
 		</div>
 
 		<%@include file="../../footer.html" %>

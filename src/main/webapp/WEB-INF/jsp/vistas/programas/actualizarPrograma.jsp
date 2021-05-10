@@ -19,8 +19,12 @@
 	<body>
 		<%@include file="../../menu.html" %>
 
-		<div class="container" style="margin-top:30px">
-			<h1>Actualizar Programa</h1>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Actualizar registro de App</h1>
+				<p class="lead">Actualice un registro de una App cuyos datos son erroneos.
+				</p>
+			</div>
 		</div>
 
 		<%@include file="../../footer.html" %>
