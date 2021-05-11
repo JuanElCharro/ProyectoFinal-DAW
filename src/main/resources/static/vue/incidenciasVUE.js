@@ -52,8 +52,8 @@ const app = Vue.createApp({
     irBuscarPrograma() {
       window.location.replace("http://localhost:8080/libreApp/buscarPrograma");
     },
-    irBuscarComentario() {
-      window.location.replace("http://localhost:8080/libreApp/buscarComentarios");
+    irBorrarPrograma() {
+      window.location.replace("http://localhost:8080/libreApp/eliminarPrograma");
     },
   },
 });

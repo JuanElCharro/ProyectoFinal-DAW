@@ -100,9 +100,9 @@
                     <div class="col-sm-12 col-lg-12 col-xl-4">
                         <div class="jumbotron mt-3">
                             <p class="lead mb-4" id="center">
-                                <img src="media/contacto/write-icon.png" width="250" height="250" alt="write-icon"
-                                    v-on:click="irBuscarComentario()">
-                                <br> Puede escribir comentarios o ver las opiniones de los usuarios
+                                <img src="media/contacto/writer-icon.png" width="210" height="250" alt="write-icon"
+                                    v-on:click="irBorrarPrograma()">
+                                <br> Puede borrar el programa si queda desactualizado
                             </p>
                         </div>
                     </div>
