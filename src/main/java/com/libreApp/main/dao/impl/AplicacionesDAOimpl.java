@@ -42,9 +42,11 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	
 	@Autowired
 	private LicenciasRepository licenciasRepository;
-
+	
 	@Override
-	public List<AplicacionesDTO> obtenerAplicacionPorIdNombre(String nombre_app) {
+	public List<AplicacionesDTO> obtenerAplicacionPorNombreCategoriaLicenciaValoracion(String nombre_app,
+			String version, String fecha, String link_imagen, String link_descarga, String descripcion,
+			Integer id_categoria, Integer id_licencia, Integer id_valoracion) {
 		// TODO Auto-generated method stub
 		return null;
 	}
