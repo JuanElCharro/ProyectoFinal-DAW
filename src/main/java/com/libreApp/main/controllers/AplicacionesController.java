@@ -63,9 +63,6 @@ public class AplicacionesController {
 	
 	@GetMapping(value = "buscarPrograma")
 	public String mostrarBuscarPrograma(ModelMap model) {
-		model.addAttribute("listaCategorias", combosDao.comboCategorias());
-		model.addAttribute("listaLicencias", combosDao.comboLicencias());
-		model.addAttribute("listaValoraciones", combosDao.comboValoraciones());
 		return "vistas/programas/buscarPrograma";
 	}
 	
@@ -77,15 +74,9 @@ public class AplicacionesController {
 			@RequestParam(value = "link_imagen", required = false) String link_imagen,
 			@RequestParam(value = "link_descarga", required = false) String link_descarga,
 			@RequestParam(value = "descripcion", required = false) String descripcion,
-			@RequestParam(value = "categorias") Integer id_categoria,
-			@RequestParam(value = "licencias") Integer id_licencia,
-			@RequestParam(value = "valoraciones") Integer id_valoracion,
 		ModelMap model) {
 		
-		model.addAttribute("lista", appImpl.insertarAplicacion(nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria, id_licencia, id_valoracion));
-		model.addAttribute("listaCategorias", combosDao.comboCategorias());
-		model.addAttribute("listaLicencias", combosDao.comboLicencias());
-		model.addAttribute("listaValoraciones", combosDao.comboValoraciones());
+		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(nombre_app, version, fecha, link_imagen, link_descarga, descripcion));
 		return "vistas/programas/buscarPrograma";
 	}
 	
