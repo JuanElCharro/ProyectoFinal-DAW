@@ -29,6 +29,27 @@ public class AplicacionesDTO {
 	 * @param link_imagen
 	 * @param link_descarga
 	 * @param descripcion
+	 */
+	public AplicacionesDTO(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+			String descripcion) {
+		super();
+		this.nombre_app = nombre_app;
+		this.version = version;
+		this.fecha = fecha;
+		this.link_imagen = link_imagen;
+		this.link_descarga = link_descarga;
+		this.descripcion = descripcion;
+	}
+
+
+
+	/**
+	 * @param nombre_app
+	 * @param version
+	 * @param fecha
+	 * @param link_imagen
+	 * @param link_descarga
+	 * @param descripcion
 	 * @param id_categoria
 	 * @param id_licencia
 	 * @param id_valoracion

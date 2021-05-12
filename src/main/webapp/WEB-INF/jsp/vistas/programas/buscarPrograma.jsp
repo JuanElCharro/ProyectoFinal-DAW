@@ -82,20 +82,27 @@
 								</form>
 								<hr>
 
-								<c:forEach items="${lista}" var="programa">
-									<div class="card col-4" style="width: 18rem;">
-										<img src="${programa.link_imagen}" class="card-img-top" alt="fotoApp">
-										<div class="card-body">
-											<h5 class="card-title">${programa.nombre}</h5>
-											<p class="card-text">${programa.descripcion}</p>
+								<!-- Bucle que recorre y muestra los resultados -->
+								<div class="row">
+									<c:forEach items="${lista}" var="programa">
+										<div class="col-12 col-md-6 col-lg-4">
+											<div class="card bg-light border-dark" style="margin-bottom: 1em;">
+												<div style="text-align: center;">
+													<img src="${programa.link_imagen}" style="margin-top: 1em;" width="100" height="100" alt=" ">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title"><strong>${programa.nombre_app}</strong></h5>
+													<p class="card-text">${programa.descripcion}</p>
+												</div>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item"><strong>Version:</strong> ${programa.version}</li>
+													<li class="list-group-item"><strong>Fecha:</strong> ${programa.fecha}</li>
+												</ul>
+												<a href="${programa.link_descarga}" class="btn btn-success">Descarga</a>
+											</div>
 										</div>
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">${programa.version}</li>
-											<li class="list-group-item">${programa.fecha}</li>
-										</ul>
-										<a href="${programa.link_descarga}" class="btn btn-primary">Descarga</a>
-									</div>
-								</c:forEach>
+									</c:forEach>
+								</div>
 
 							</div>
 						</div>

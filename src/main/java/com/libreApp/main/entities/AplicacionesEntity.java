@@ -7,8 +7,6 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -57,6 +55,27 @@ public class AplicacionesEntity {
 	public AplicacionesEntity() {
 		super();
 	}
+
+	/**
+	 * @param nombre_app
+	 * @param version
+	 * @param fecha
+	 * @param link_imagen
+	 * @param link_descarga
+	 * @param descripcion
+	 */
+	public AplicacionesEntity(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+			String descripcion) {
+		super();
+		this.nombre_app = nombre_app;
+		this.version = version;
+		this.fecha = fecha;
+		this.link_imagen = link_imagen;
+		this.link_descarga = link_descarga;
+		this.descripcion = descripcion;
+	}
+
+
 
 	/**
 	 * @param nombre_app
