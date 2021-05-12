@@ -86,7 +86,7 @@
 								<div class="row">
 									<c:forEach items="${lista}" var="programa">
 										<div class="col-12 col-md-6 col-lg-4">
-											<div class="card bg-light border-dark" style="margin-bottom: 1em;">
+											<div class="card bg-light" style="margin-bottom: 1em;">
 												<div style="text-align: center;">
 													<img src="${programa.link_imagen}" style="margin-top: 1em;" width="100" height="100" alt=" ">
 												</div>
