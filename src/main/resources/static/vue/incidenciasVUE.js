@@ -53,7 +53,7 @@ const app = Vue.createApp({
       window.location.replace("http://localhost:8080/libreApp/buscarPrograma");
     },
     irBorrarPrograma() {
-      window.location.replace("http://localhost:8080/libreApp/eliminarPrograma");
+      window.location.assign("http://localhost:8080/libreApp/formularioEliminarPrograma");
     },
   },
 });
