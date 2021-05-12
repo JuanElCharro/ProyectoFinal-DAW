@@ -56,6 +56,7 @@
 										</div>
 									</div>
 
+									<!-- Elementos ocultos que recogen datos para buscar -->
 									<div class="row" hidden>
 										<div class="col-6">
 											<label for="link_imagen">Link de la imagen:</label> <input type="url"

@@ -80,14 +80,34 @@ public class AplicacionesController {
 		return "vistas/programas/buscarPrograma";
 	}
 	
-	//Actualizar Registro
-	@GetMapping(value = "actualizarPrograma")
-	public String mostrarActualizarPrograma(ModelMap model) {
-		return "vistas/programas/actualizarPrograma";
+	//Borrar Programa
+	
+	@GetMapping(value = "formularioEliminarPrograma")
+	public String mostrarFormularioEliminarPrograma() {
+		return "vistas/programas/eliminarPrograma";
 	}
 	
-	@GetMapping(value = "eliminarPrograma")
-	public String mostrarEliminarPrograma(ModelMap model) {
+	@PostMapping(value = "formularioEliminarPrograma")
+	public String mostrarEliminarPrograma(
+			@RequestParam(value = "nombre_app", required = false) String nombre_app,
+			@RequestParam(value = "version", required = false) String version,
+			@RequestParam(value = "fecha", required = false) String fecha,
+			@RequestParam(value = "link_imagen", required = false) String link_imagen,
+			@RequestParam(value = "link_descarga", required = false) String link_descarga,
+			@RequestParam(value = "descripcion", required = false) String descripcion,
+			ModelMap model) {
+
+		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(nombre_app, version, fecha, link_imagen, link_descarga, descripcion));
+
+		return "vistas/programas/eliminarPrograma";
+	}
+
+	@PostMapping(value = "eliminarPrograma")
+	public String eliminarPrograma(
+			@RequestParam(value = "nombre_app", required = false) String nombre_app,
+			ModelMap modelMap) {
+			
+		modelMap.addAttribute("resultado", appImpl.eliminarAplicacion(nombre_app));
 		return "vistas/programas/eliminarPrograma";
 	}
 }

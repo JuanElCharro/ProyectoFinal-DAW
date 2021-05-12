@@ -78,16 +78,9 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	}
 
 	@Override
-	public Integer actualizarAplicacion(String nombre_app, String version, String fecha, String link_imagen,
-			String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public Integer eliminarAplicacion(String nombre_app) {
-		// TODO Auto-generated method stub
-		return null;
+		aplicacionesRepository.eliminarAppPorId(nombre_app);
+		return 1;
 	}
 	
 }

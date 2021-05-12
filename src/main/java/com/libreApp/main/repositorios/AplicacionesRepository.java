@@ -34,4 +34,10 @@ public interface AplicacionesRepository extends CrudRepository<AplicacionesEntit
 					  @Param("link_imagen") String link_imagen,
 					  @Param("link_descarga") String link_descarga,
 					  @Param("descripcion") String descripcion);
+	
+	@Query(value = "DELETE com.libreApp.main.dtos.AplicacionesDTO (a.nombre_app) "
+			+ "FROM com.libreApp.main.entities.AplicacionesEntity a"
+			+ "WHERE a.nombre_app LIKE CONCAT ('%',:nombre_app,'%') ")
+			  List<AplicacionesDTO>eliminarAppPorId(
+					  @Param("nombre_app") String nombre_app);
 }
