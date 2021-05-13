@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS `aplicaciones`;
 
 CREATE TABLE `libreapp`.`aplicaciones` (
   `nombre_app` VARCHAR(45) NOT NULL,
-  `version` VARCHAR(5) NULL,
+  `version` VARCHAR(10) NULL,
   `fecha` date NULL,
   `link_imagen` VARCHAR(250) NULL,
   `link_descarga` VARCHAR(250) NULL,

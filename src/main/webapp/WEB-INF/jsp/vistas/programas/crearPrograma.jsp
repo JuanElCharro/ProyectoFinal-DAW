@@ -48,7 +48,7 @@
 										<div class="col-6">
 											<label for="version">Version del programa:</label>
 											<input type="text" class="form-control" id="version" name="version"
-												placeholder="Ej: v3.5" maxlength="5">
+												placeholder="Ej: v3.5" maxlength="10">
 										</div>
 										<div class="col-6">
 											<label for="fecha">Fecha ultima version:</label>
@@ -60,12 +60,12 @@
 										<div class="col-6">
 											<label for="link_imagen">Link de la imagen:</label>
 											<input type="url" class="form-control" id="link_imagen" name="link_imagen"
-												placeholder="https://www...." maxlength="45">
+												placeholder="https://www...." maxlength="250">
 										</div>
 										<div class="col-6">
 											<label for="link_descarga">Link de descarga:</label>
 											<input type="url" class="form-control" id="link_descarga"
-												name="link_descarga" placeholder="https://www...." maxlength="45">
+												name="link_descarga" placeholder="https://www...." maxlength="250">
 										</div>
 									</div>
 
@@ -74,7 +74,7 @@
 											<label for="descripcion">Descripcion:</label>
 											<textarea class="form-control" name="descripcion" id="descripcion" rows="3"
 												placeholder="Breve descripcion del programa..."
-												maxlength="500"></textarea>
+												maxlength="600"></textarea>
 										</div>
 									</div>
 
