@@ -8,7 +8,8 @@ package com.libreApp.main.dtos;
  *
  */
 public class AplicacionesDTO {
-	private String nombreApp;
+	private Integer id_app;
+	private String nombre_app;
 	private String version;
 	private String fecha;
 	private String link_imagen;
@@ -18,33 +19,9 @@ public class AplicacionesDTO {
 	private int id_licencia;
 	private int id_valoracion;
 	
-	public AplicacionesDTO() {
-		super();
-	}
-
 	/**
-	 * @param nombreApp
-	 * @param version
-	 * @param fecha
-	 * @param link_imagen
-	 * @param link_descarga
-	 * @param descripcion
-	 */
-	public AplicacionesDTO(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
-			String descripcion) {
-		super();
-		this.nombreApp = nombreApp;
-		this.version = version;
-		this.fecha = fecha;
-		this.link_imagen = link_imagen;
-		this.link_descarga = link_descarga;
-		this.descripcion = descripcion;
-	}
-
-
-
-	/**
-	 * @param nombreApp
+	 * @param id_app
+	 * @param nombre_app
 	 * @param version
 	 * @param fecha
 	 * @param link_imagen
@@ -54,10 +31,11 @@ public class AplicacionesDTO {
 	 * @param id_licencia
 	 * @param id_valoracion
 	 */
-	public AplicacionesDTO(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
-			String descripcion, int id_categoria, int id_licencia, int id_valoracion) {
+	public AplicacionesDTO(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion, int id_categoria, int id_licencia, int id_valoracion) {
 		super();
-		this.nombreApp = nombreApp;
+		this.id_app = id_app;
+		this.nombre_app = nombre_app;
 		this.version = version;
 		this.fecha = fecha;
 		this.link_imagen = link_imagen;
@@ -69,17 +47,52 @@ public class AplicacionesDTO {
 	}
 
 	/**
-	 * @return the nombreApp
+	 * @param id_app
+	 * @param nombre_app
+	 * @param version
+	 * @param fecha
+	 * @param link_imagen
+	 * @param link_descarga
+	 * @param descripcion
 	 */
-	public String getnombreApp() {
-		return nombreApp;
+	public AplicacionesDTO(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion) {
+		super();
+		this.id_app = id_app;
+		this.nombre_app = nombre_app;
+		this.version = version;
+		this.fecha = fecha;
+		this.link_imagen = link_imagen;
+		this.link_descarga = link_descarga;
+		this.descripcion = descripcion;
 	}
 
 	/**
-	 * @param nombreApp the nombreApp to set
+	 * @return the id_app
 	 */
-	public void setnombreApp(String nombreApp) {
-		this.nombreApp = nombreApp;
+	public Integer getId_app() {
+		return id_app;
+	}
+
+	/**
+	 * @param id_app the id_app to set
+	 */
+	public void setId_app(Integer id_app) {
+		this.id_app = id_app;
+	}
+
+	/**
+	 * @return the nombre_app
+	 */
+	public String getNombre_app() {
+		return nombre_app;
+	}
+
+	/**
+	 * @param nombre_app the nombre_app to set
+	 */
+	public void setNombre_app(String nombre_app) {
+		this.nombre_app = nombre_app;
 	}
 
 	/**
@@ -193,6 +206,7 @@ public class AplicacionesDTO {
 	public void setId_valoracion(int id_valoracion) {
 		this.id_valoracion = id_valoracion;
 	}
-
+	
+	
 	
 }

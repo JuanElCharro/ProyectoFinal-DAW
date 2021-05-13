@@ -39,11 +39,18 @@
 				<form
 					action="http://localhost:8080/libreApp/formularioEliminarPrograma"
 					method="post" id="formulario">
+					
+					<div class="row" hidden>
+						<div class="col-12">
+							<label for="id_app"></label> <input type="text"
+								class="form-control" id="id_app" name="id_app">
+						</div>
+					</div>
 
 					<div class="row">
 						<div class="col-12">
-							<label for="nombreApp">Nombre:</label> <input type="text"
-								class="form-control" id="nombreApp" name="nombreApp"
+							<label for="nombre_app">Nombre:</label> <input type="text"
+								class="form-control" id="nombre_app" name="nombre_app"
 								placeholder="Introduzca el nombre del programa a borrar, por favor..."
 								maxlength="45">
 						</div>
@@ -104,11 +111,11 @@
 									</div>
 									<div class="card-body">
 										<h5 class="card-title">
-											<strong>${programa.nombreApp}</strong>
+											<strong>${programa.nombre_app}</strong>
 										</h5>
 										<!-- Recoger ID para borrarlo -->
-										<input hidden type="text" id="nombreApp" name="nombreApp"
-											value="${programa.nombreApp}" readonly>
+										<input hidden type="text" id="id_app" name="id_app"
+											value="${programa.id_app}" readonly>
 
 										<p hidden class="card-text">${programa.descripcion}</p>
 									</div>

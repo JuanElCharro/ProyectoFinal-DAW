@@ -48,11 +48,6 @@ public class CategoriasDTO {
 	public void setNombre_categoria(String nombre_categoria) {
 		this.nombre_categoria = nombre_categoria;
 	}
-
-	@Override
-	public String toString() {
-		return "CategoriasDTO [id_categoria=" + id_categoria + ", nombre_categoria=" + nombre_categoria + "]";
-	}
 	
 	
 }

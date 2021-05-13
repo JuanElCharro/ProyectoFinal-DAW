@@ -19,27 +19,22 @@ import com.libreApp.main.entities.AplicacionesEntity;
 
 @Repository
 public interface AplicacionesRepository extends CrudRepository<AplicacionesEntity, Integer>{
-	@Query(value = "select new com.libreApp.main.dtos.AplicacionesDTO (a.nombreApp, a.version, a.fecha, a.link_imagen, a.link_descarga, a.descripcion) "
+	@Query(value = "select new com.libreApp.main.dtos.AplicacionesDTO (a.id_app, a.nombre_app, a.version, a.fecha, a.link_imagen, a.link_descarga, a.descripcion) "
 			+ "FROM com.libreApp.main.entities.AplicacionesEntity a "
-			+ "WHERE a.nombreApp LIKE CONCAT ('%',:nombreApp,'%') "
+			+ "WHERE (a.id_app LIKE CONCAT('%',:id_app,'%') or :id_app is null) "
+			+ "AND a.nombre_app LIKE CONCAT ('%',:nombre_app,'%') "
 			+ "AND a.version LIKE CONCAT ('%',:version,'%') "
 			+ "AND a.fecha LIKE CONCAT ('%',:fecha,'%') "
 			+ "AND a.link_imagen LIKE CONCAT ('%',:link_imagen,'%') "
 			+ "AND a.link_descarga LIKE CONCAT ('%',:link_descarga,'%') "
 			+ "AND a.descripcion LIKE CONCAT ('%',:descripcion,'%') ")
 	List<AplicacionesDTO>buscarAplicacionPorNombreCategoriaLicenciaValoracion(
-			@Param("nombreApp") String nombreApp,
+			@Param("id_app") Integer id_app,
+			@Param("nombre_app") String nombre_app,
 			@Param("version") String version,
 			@Param("fecha") String fecha,
 			@Param("link_imagen") String link_imagen,
 			@Param("link_descarga") String link_descarga,
 			@Param("descripcion") String descripcion);
 
-	@Query(value = "DELETE com.libreApp.main.dtos.AplicacionesDTO (a.nombreApp) "
-			+ "FROM com.libreApp.main.entities.AplicacionesEntity a "
-			+ "WHERE a.nombreApp LIKE CONCAT ('%',:nombreApp,'%') ")
-	List<AplicacionesDTO>eliminarAppPorId(
-			@Param("nombreApp") String nombreApp);
-
-	List<AplicacionesEntity> deleteByNombreApp(String nombreApp);
 };

@@ -22,8 +22,11 @@ import javax.persistence.Table;
 public class AplicacionesEntity {
 	
 	@Id
-	@Column(name = "nombreApp")
-	private String nombreApp;
+	@Column(name = "id_app")
+	private Integer id_app;
+	
+	@Column(name = "nombre_app")
+	private String nombre_app;
 	
 	@Column(name = "version")
 	private String version;
@@ -51,34 +54,22 @@ public class AplicacionesEntity {
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "id_valoracion")
 	private ValoracionesEntity valoraciones;
-	
+
 	public AplicacionesEntity() {
 		super();
 	}
 
 	/**
-	 * @param nombreApp
-	 * @param version
-	 * @param fecha
-	 * @param link_imagen
-	 * @param link_descarga
-	 * @param descripcion
+	 * @param id_app
 	 */
-	public AplicacionesEntity(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
-			String descripcion) {
+	public AplicacionesEntity(Integer id_app) {
 		super();
-		this.nombreApp = nombreApp;
-		this.version = version;
-		this.fecha = fecha;
-		this.link_imagen = link_imagen;
-		this.link_descarga = link_descarga;
-		this.descripcion = descripcion;
+		this.id_app = id_app;
 	}
 
-
-
 	/**
-	 * @param nombreApp
+	 * @param id_app
+	 * @param nombre_app
 	 * @param version
 	 * @param fecha
 	 * @param link_imagen
@@ -88,11 +79,12 @@ public class AplicacionesEntity {
 	 * @param licencias
 	 * @param valoraciones
 	 */
-	public AplicacionesEntity(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
-			String descripcion, CategoriasEntity categorias, LicenciasEntity licencias,
+	public AplicacionesEntity(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion, CategoriasEntity categorias, LicenciasEntity licencias,
 			ValoracionesEntity valoraciones) {
 		super();
-		this.nombreApp = nombreApp;
+		this.id_app = id_app;
+		this.nombre_app = nombre_app;
 		this.version = version;
 		this.fecha = fecha;
 		this.link_imagen = link_imagen;
@@ -104,17 +96,52 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * @return the nombreApp
+	 * @param id_app
+	 * @param nombre_app
+	 * @param version
+	 * @param fecha
+	 * @param link_imagen
+	 * @param link_descarga
+	 * @param descripcion
 	 */
-	public String getnombreApp() {
-		return nombreApp;
+	public AplicacionesEntity(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion) {
+		super();
+		this.id_app = id_app;
+		this.nombre_app = nombre_app;
+		this.version = version;
+		this.fecha = fecha;
+		this.link_imagen = link_imagen;
+		this.link_descarga = link_descarga;
+		this.descripcion = descripcion;
 	}
 
 	/**
-	 * @param nombreApp the nombreApp to set
+	 * @return the id_app
 	 */
-	public void setnombreApp(String nombreApp) {
-		this.nombreApp = nombreApp;
+	public Integer getId_app() {
+		return id_app;
+	}
+
+	/**
+	 * @param id_app the id_app to set
+	 */
+	public void setId_app(Integer id_app) {
+		this.id_app = id_app;
+	}
+
+	/**
+	 * @return the nombre_app
+	 */
+	public String getNombre_app() {
+		return nombre_app;
+	}
+
+	/**
+	 * @param nombre_app the nombre_app to set
+	 */
+	public void setNombre_app(String nombre_app) {
+		this.nombre_app = nombre_app;
 	}
 
 	/**

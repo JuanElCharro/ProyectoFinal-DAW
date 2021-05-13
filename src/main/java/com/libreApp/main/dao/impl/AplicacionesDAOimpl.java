@@ -44,13 +44,13 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	private LicenciasRepository licenciasRepository;
 	
 	@Override
-	public List<AplicacionesDTO> obtenerAplicacionPorNombreCategoriaLicenciaValoracion(String nombreApp,
+	public List<AplicacionesDTO> obtenerAplicacionPorNombreCategoriaLicenciaValoracion(Integer id_app, String nombre_app,
 			String version, String fecha, String link_imagen, String link_descarga, String descripcion) {
-		return aplicacionesRepository.buscarAplicacionPorNombreCategoriaLicenciaValoracion(nombreApp, version, fecha, link_imagen, link_descarga, descripcion);
+		return aplicacionesRepository.buscarAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion);
 	}
 	
 	@Override
-	public Integer insertarAplicacion(String nombreApp, String version, String fecha, String link_imagen,
+	public Integer insertarAplicacion(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
 			String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion) {
 		
 		if (fecha == "") {
@@ -69,7 +69,7 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 		ValoracionesEntity valoracion = c.get();
 		
 		//Creamos el objeto Aplicación con los valores insertados
-		AplicacionesEntity aplicacion = new AplicacionesEntity(nombreApp, version, fecha, link_imagen, link_descarga, descripcion, categoria, licencia, valoracion);
+		AplicacionesEntity aplicacion = new AplicacionesEntity(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, categoria, licencia, valoracion);
 		
 		//Guardamos el objeto
 		aplicacionesRepository.save(aplicacion);
@@ -78,8 +78,8 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	}
 
 	@Override
-	public Integer eliminarAplicacion(String nombreApp) {
-		aplicacionesRepository.deleteByNombreApp(nombreApp);
+	public Integer eliminarAplicacion(Integer nombre_app) {
+		aplicacionesRepository.deleteById(nombre_app);
 		return 1;
 	}
 	

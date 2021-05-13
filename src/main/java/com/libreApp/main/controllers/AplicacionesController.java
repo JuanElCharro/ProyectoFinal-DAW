@@ -40,7 +40,8 @@ public class AplicacionesController {
 	
 	@PostMapping(value = "crearPrograma")
 	public String crearPrograma(
-			@RequestParam(value = "nombreApp", required = false) String nombreApp,
+			@RequestParam(value = "id_app", required = false) Integer id_app,
+			@RequestParam(value = "nombre_app", required = false) String nombre_app,
 			@RequestParam(value = "version", required = false) String version,
 			@RequestParam(value = "fecha", required = false) String fecha,
 			@RequestParam(value = "link_imagen", required = false) String link_imagen,
@@ -51,7 +52,7 @@ public class AplicacionesController {
 			@RequestParam(value = "valoraciones") Integer id_valoracion,
 		ModelMap model) {
 		
-		model.addAttribute("resultado", appImpl.insertarAplicacion(nombreApp, version, fecha, link_imagen, link_descarga, descripcion, id_categoria, id_licencia, id_valoracion));
+		model.addAttribute("resultado", appImpl.insertarAplicacion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria, id_licencia, id_valoracion));
 		model.addAttribute("listaCategorias", combosDao.comboCategorias());
 		model.addAttribute("listaLicencias", combosDao.comboLicencias());
 		model.addAttribute("listaValoraciones", combosDao.comboValoraciones());
@@ -68,7 +69,8 @@ public class AplicacionesController {
 	
 	@PostMapping(value = "buscarPrograma")
 	public String buscarPrograma(
-			@RequestParam(value = "nombreApp", required = false) String nombreApp,
+			@RequestParam(value = "id_app", required = false) Integer id_app,
+			@RequestParam(value = "nombre_app", required = false) String nombre_app,
 			@RequestParam(value = "version", required = false) String version,
 			@RequestParam(value = "fecha", required = false) String fecha,
 			@RequestParam(value = "link_imagen", required = false) String link_imagen,
@@ -76,7 +78,7 @@ public class AplicacionesController {
 			@RequestParam(value = "descripcion", required = false) String descripcion,
 		ModelMap model) {
 		
-		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(nombreApp, version, fecha, link_imagen, link_descarga, descripcion));
+		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion));
 		return "vistas/programas/buscarPrograma";
 	}
 	
@@ -89,7 +91,8 @@ public class AplicacionesController {
 	
 	@PostMapping(value = "formularioEliminarPrograma")
 	public String mostrarEliminarPrograma(
-			@RequestParam(value = "nombreApp", required = false) String nombreApp,
+			@RequestParam(value = "id_app", required = false) Integer id_app,
+			@RequestParam(value = "nombre_app", required = false) String nombre_app,
 			@RequestParam(value = "version", required = false) String version,
 			@RequestParam(value = "fecha", required = false) String fecha,
 			@RequestParam(value = "link_imagen", required = false) String link_imagen,
@@ -97,17 +100,17 @@ public class AplicacionesController {
 			@RequestParam(value = "descripcion", required = false) String descripcion,
 			ModelMap model) {
 
-		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(nombreApp, version, fecha, link_imagen, link_descarga, descripcion));
+		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion));
 
 		return "vistas/programas/eliminarPrograma";
 	}
 
 	@PostMapping(value = "eliminarPrograma")
 	public String eliminarPrograma(
-			@RequestParam(value = "nombreApp", required = false) String nombreApp,
+			@RequestParam(value = "id_app", required = false) Integer id_app,
 			ModelMap modelMap) {
 			
-		modelMap.addAttribute("resultado", appImpl.eliminarAplicacion(nombreApp));
+		modelMap.addAttribute("resultado", appImpl.eliminarAplicacion(id_app));
 		return "vistas/programas/eliminarPrograma";
 	}
 }

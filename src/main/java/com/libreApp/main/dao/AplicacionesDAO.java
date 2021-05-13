@@ -14,7 +14,7 @@ import com.libreApp.main.dtos.AplicacionesDTO;
  */
 
 public interface AplicacionesDAO {
-	List<AplicacionesDTO> obtenerAplicacionPorNombreCategoriaLicenciaValoracion(String nombreApp, String version, String fecha, String link_imagen, String link_descarga, String descripcion);
-	Integer insertarAplicacion(String nombreApp, String version, String fecha, String link_imagen, String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion);
-	Integer eliminarAplicacion(String nombreApp);
+	List<AplicacionesDTO> obtenerAplicacionPorNombreCategoriaLicenciaValoracion(Integer id_app, String nombre_app, String version, String fecha, String link_imagen, String link_descarga, String descripcion);
+	Integer insertarAplicacion(Integer id_app, String nombre_app, String version, String fecha, String link_imagen, String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion);
+	Integer eliminarAplicacion(Integer id_app);
 }

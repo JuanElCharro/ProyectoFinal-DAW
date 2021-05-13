@@ -40,11 +40,18 @@
 			<div class="form-group">
 				<form action="http://localhost:8080/libreApp/crearPrograma"
 					method="post" id="formulario">
+					
+					<div class="row" hidden>
+						<div class="col-12">
+							<label for="id_app"></label> <input type="text"
+								class="form-control" id="id_app" name="id_app">
+						</div>
+					</div>
 
 					<div class="row">
 						<div class="col-12">
-							<label for="nombreApp">Nombre:</label> <input type="text"
-								class="form-control" id="nombreApp" name="nombreApp"
+							<label for="nombre_app">Nombre:</label> <input type="text"
+								class="form-control" id="nombre_app" name="nombre_app"
 								placeholder="Ej: LibreOffice..." maxlength="45">
 						</div>
 					</div>
