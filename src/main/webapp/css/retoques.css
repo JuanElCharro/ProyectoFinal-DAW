@@ -1,29 +1,25 @@
 /* Colorea las barras de las licencias en Inicio dependiendo del tipo */
-
 #licenciasLibres {
-  background: #3eb442;
-  color: white;
+	background: #3eb442;
+	color: white;
 }
 
 #licenciasPrivativas {
-  background: #880000;
-  color: white;
+	background: #880000;
+	color: white;
 }
 
 /* Separa la cabecera de Inicio del cuerpo de la pantalla */
-
 #separacion-imagentexto-inicio {
-  margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 /* Genera espacios entre los botones de la tarjeta de tecnologías usadas en Inicio */
-
 #buttonCard {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 /* Controla los tamaños de las tarjetas en Bienvenido según el dispositivo */
-
 #tarjetasBienvenido {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }

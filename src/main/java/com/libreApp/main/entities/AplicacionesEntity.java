@@ -22,8 +22,8 @@ import javax.persistence.Table;
 public class AplicacionesEntity {
 	
 	@Id
-	@Column(name = "nombre_app")
-	private String nombre_app;
+	@Column(name = "nombreApp")
+	private String nombreApp;
 	
 	@Column(name = "version")
 	private String version;
@@ -57,17 +57,17 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * @param nombre_app
+	 * @param nombreApp
 	 * @param version
 	 * @param fecha
 	 * @param link_imagen
 	 * @param link_descarga
 	 * @param descripcion
 	 */
-	public AplicacionesEntity(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+	public AplicacionesEntity(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
 			String descripcion) {
 		super();
-		this.nombre_app = nombre_app;
+		this.nombreApp = nombreApp;
 		this.version = version;
 		this.fecha = fecha;
 		this.link_imagen = link_imagen;
@@ -78,7 +78,7 @@ public class AplicacionesEntity {
 
 
 	/**
-	 * @param nombre_app
+	 * @param nombreApp
 	 * @param version
 	 * @param fecha
 	 * @param link_imagen
@@ -88,11 +88,11 @@ public class AplicacionesEntity {
 	 * @param licencias
 	 * @param valoraciones
 	 */
-	public AplicacionesEntity(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+	public AplicacionesEntity(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
 			String descripcion, CategoriasEntity categorias, LicenciasEntity licencias,
 			ValoracionesEntity valoraciones) {
 		super();
-		this.nombre_app = nombre_app;
+		this.nombreApp = nombreApp;
 		this.version = version;
 		this.fecha = fecha;
 		this.link_imagen = link_imagen;
@@ -104,17 +104,17 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * @return the nombre_app
+	 * @return the nombreApp
 	 */
-	public String getNombre_app() {
-		return nombre_app;
+	public String getnombreApp() {
+		return nombreApp;
 	}
 
 	/**
-	 * @param nombre_app the nombre_app to set
+	 * @param nombreApp the nombreApp to set
 	 */
-	public void setNombre_app(String nombre_app) {
-		this.nombre_app = nombre_app;
+	public void setnombreApp(String nombreApp) {
+		this.nombreApp = nombreApp;
 	}
 
 	/**

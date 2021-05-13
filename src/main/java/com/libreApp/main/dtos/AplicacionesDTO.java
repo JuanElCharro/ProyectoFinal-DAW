@@ -8,7 +8,7 @@ package com.libreApp.main.dtos;
  *
  */
 public class AplicacionesDTO {
-	private String nombre_app;
+	private String nombreApp;
 	private String version;
 	private String fecha;
 	private String link_imagen;
@@ -23,17 +23,17 @@ public class AplicacionesDTO {
 	}
 
 	/**
-	 * @param nombre_app
+	 * @param nombreApp
 	 * @param version
 	 * @param fecha
 	 * @param link_imagen
 	 * @param link_descarga
 	 * @param descripcion
 	 */
-	public AplicacionesDTO(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+	public AplicacionesDTO(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
 			String descripcion) {
 		super();
-		this.nombre_app = nombre_app;
+		this.nombreApp = nombreApp;
 		this.version = version;
 		this.fecha = fecha;
 		this.link_imagen = link_imagen;
@@ -44,7 +44,7 @@ public class AplicacionesDTO {
 
 
 	/**
-	 * @param nombre_app
+	 * @param nombreApp
 	 * @param version
 	 * @param fecha
 	 * @param link_imagen
@@ -54,10 +54,10 @@ public class AplicacionesDTO {
 	 * @param id_licencia
 	 * @param id_valoracion
 	 */
-	public AplicacionesDTO(String nombre_app, String version, String fecha, String link_imagen, String link_descarga,
+	public AplicacionesDTO(String nombreApp, String version, String fecha, String link_imagen, String link_descarga,
 			String descripcion, int id_categoria, int id_licencia, int id_valoracion) {
 		super();
-		this.nombre_app = nombre_app;
+		this.nombreApp = nombreApp;
 		this.version = version;
 		this.fecha = fecha;
 		this.link_imagen = link_imagen;
@@ -69,17 +69,17 @@ public class AplicacionesDTO {
 	}
 
 	/**
-	 * @return the nombre_app
+	 * @return the nombreApp
 	 */
-	public String getNombre_app() {
-		return nombre_app;
+	public String getnombreApp() {
+		return nombreApp;
 	}
 
 	/**
-	 * @param nombre_app the nombre_app to set
+	 * @param nombreApp the nombreApp to set
 	 */
-	public void setNombre_app(String nombre_app) {
-		this.nombre_app = nombre_app;
+	public void setnombreApp(String nombreApp) {
+		this.nombreApp = nombreApp;
 	}
 
 	/**
