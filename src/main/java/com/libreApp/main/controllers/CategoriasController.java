@@ -43,4 +43,12 @@ public class CategoriasController {
 		
 		return "vistas/categorias/crearCategoria";
 	}
+	
+	//Mostrar Categorias
+	
+	@GetMapping(value = "mostrarCategoria")
+	public String mostrarFormularioEliminarCategoria(ModelMap model) {
+		model.addAttribute("listaCategorias", combosDao.comboCategorias());
+		return "vistas/categorias/mostrarCategoria";
+	}
 }

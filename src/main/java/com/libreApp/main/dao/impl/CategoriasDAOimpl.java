@@ -31,10 +31,4 @@ public class CategoriasDAOimpl implements CategoriasDAO{
 		return 1;
 	}
 
-	@Override
-	public Integer eliminarCategoria(Integer id_categoria) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }
