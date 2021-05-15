@@ -180,7 +180,7 @@
 					El<strong> GNU es un sistema operativo de software libre </strong>,
 					es decir, respeta la libertad de los usuarios. El sistema operativo
 					GNU consiste en paquetes de GNU (programas publicados
-					especificamente por el proyecto GNU) además de software libre
+					especificamente por el proyecto GNU), ademas de software libre
 					publicado por terceras partes. El desarrollo de GNU ha permitido
 					que se pueda utilizar un ordenador sin software que atropelle
 					nuestra libertad.
