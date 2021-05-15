@@ -20,6 +20,7 @@ import javax.persistence.Table;
 public class CategoriasEntity {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id_categoria")
 	private Integer id_categoria;
 	

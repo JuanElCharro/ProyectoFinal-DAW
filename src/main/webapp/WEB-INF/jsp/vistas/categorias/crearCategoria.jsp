@@ -33,6 +33,44 @@
 		</div>
 	</div>
 	
+	<div class="container" style="margin-top: 30px">
+		<div class="col-12">
+			<div class="form-group">
+				<form action="http://localhost:8080/libreApp/crearCategorias"
+					method="post" id="formulario">
+					
+					<div class="row" hidden>
+						<div class="col-12">
+							<label for="id_categoria"></label> <input type="text"
+								class="form-control" id="id_categoria" name="id_categoria">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<label for="nombre_categoria"></label> Nombre de la nueva categoria: <input type="text"
+								class="form-control" id="nombre_categoria" name="nombre_categoria">
+						</div>
+					</div>
+
+					<br> <input type="submit" class="btn btn-primary col-12"
+						value="Insertar">
+				</form>
+				<hr>
+				<c:if test="${resultado == 1}">
+					<div id="tarjetasBienvenido" class="col-12">
+						<div class="card text-white bg-success">
+							<div class="card-body">
+								<h3 class="card-title">Categoria insertada correctamente.</h3>
+							</div>
+						</div>
+					</div>
+				</c:if>
+			</div>
+		</div>
+
+	</div>
+	
 	<%@include file="../../footer.html"%>
 </body>
 </html>
