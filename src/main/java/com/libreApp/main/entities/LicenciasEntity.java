@@ -20,6 +20,7 @@ import javax.persistence.Table;
 public class LicenciasEntity {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id_licencia")
 	private Integer id_licencia;
 	

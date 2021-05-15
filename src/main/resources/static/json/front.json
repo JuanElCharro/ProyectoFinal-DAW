@@ -14,6 +14,11 @@
       "id": 3,
       "nombre": "C",
       "comentario": "Empecé con ese lenguaje"
+    },
+    {
+      "id": 4,
+      "nombre": ".NET",
+      "comentario": "Tarda mucho pero me gusta"
     }
   ],
   "incidencias": [
@@ -37,6 +42,13 @@
       "comentario": "Me aburro jajaj",
       "satisfaccion": "0",
       "id": 3
+    },
+    {
+      "nombre": "Quiero recomendar un programa",
+      "correo": "hola@gmail.com",
+      "comentario": "Todo va bien :D",
+      "satisfaccion": "9",
+      "id": 4
     }
   ],
   "informacion": [
@@ -63,6 +75,12 @@
       "respuestaUtilidad": "No sabe/No contesta",
       "desarrollo": "Pasan cosas",
       "id": 6
+    },
+    {
+      "respuestaInfo": "Info Correcta",
+      "respuestaUtilidad": "Utilidad Correcta",
+      "desarrollo": "Uwu",
+      "id": 7
     }
   ]
 }

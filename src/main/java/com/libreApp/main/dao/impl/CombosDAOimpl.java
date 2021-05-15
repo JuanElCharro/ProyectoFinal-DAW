@@ -11,11 +11,9 @@ import org.springframework.stereotype.Service;
 
 import com.libreApp.main.dao.CombosDAO;
 import com.libreApp.main.dtos.CombosDTO;
-import com.libreApp.main.entities.AplicacionesEntity;
 import com.libreApp.main.entities.CategoriasEntity;
 import com.libreApp.main.entities.ValoracionesEntity;
 import com.libreApp.main.entities.LicenciasEntity;
-import com.libreApp.main.repositorios.AplicacionesRepository;
 import com.libreApp.main.repositorios.CategoriasRepository;
 import com.libreApp.main.repositorios.ValoracionesRepository;
 import com.libreApp.main.repositorios.LicenciasRepository;
