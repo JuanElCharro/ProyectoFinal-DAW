@@ -14,4 +14,4 @@ He realizado cambios para el despliegue, los nombro a continuación:
 3. He abierto los puertos 8080 y 3000 en mi router, y añadida la excepción a mi firewall.
 
 IMPORTANTE:
-Para ejecutar como desarrollo en local el proyecto, únicamente hay que sustituir todas las direcciones por "localhost": (Ctrl+h > Reemplazar en todo el proyecto > "XX.XX.XXX.XX por "localhost" [se puede hacer desde varios editores y desde el mismo Eclipse, si lo haces desde la raíz del proyecto en la ventana "Proyect Explorer"]) y seguir los pasos de arriba "Instrucciones rápidas para abrir el proyecto".
+Para ejecutar como desarrollo en local, únicamente hay que sustituir todas las direcciones por "localhost": (Ctrl+h > Reemplazar en todo el proyecto > "XX.XX.XXX.XX" por "localhost" [se puede hacer desde varios editores y desde el mismo Eclipse, en la ventana "Proyect Explorer"]) y seguir los pasos de arriba "Instrucciones rápidas para abrir el proyecto".
