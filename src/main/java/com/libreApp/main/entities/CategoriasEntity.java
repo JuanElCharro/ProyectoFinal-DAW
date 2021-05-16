@@ -34,6 +34,14 @@ public class CategoriasEntity {
 
 	/**
 	 * @param id_categoria
+	 */
+	public CategoriasEntity(Integer id_categoria) {
+		super();
+		this.id_categoria = id_categoria;
+	}
+
+	/**
+	 * @param id_categoria
 	 * @param nombre_categoria
 	 */
 	public CategoriasEntity(Integer id_categoria, String nombre_categoria) {

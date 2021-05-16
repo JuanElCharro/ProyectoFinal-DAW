@@ -91,6 +91,19 @@
 								placeholder="Breve descripcion del programa..." maxlength="500"></textarea>
 						</div>
 					</div>
+					
+					<div class="row">
+						<div class="col-12">
+							<label for="categorias">Categoria de la App:</label>
+							<select
+								class="form-control" name="categorias" form="formulario">
+								<c:forEach items="${listaCategorias}" var="categorias">
+									<option value="${categorias.id}">
+										${categorias.descripcion}</option>
+								</c:forEach>
+							</select>
+						</div>
+					</div>
 
 					<br> <input type="submit" class="btn btn-primary col-12"
 						value="Buscar">
@@ -117,6 +130,14 @@
 										${programa.version}</li>
 									<li class="list-group-item"><strong>Fecha:</strong>
 										${programa.fecha}</li>
+									<li class="list-group-item"><strong>Categoria:</strong> 
+										<c:forEach
+											items="${listaCategorias}" var="categorias">
+											<c:if test="${categorias.id == programa.id_categoria}">
+												${categorias.descripcion}
+											</c:if>
+										</c:forEach>
+									</li>
 								</ul>
 								<a href="${programa.link_descarga}" class="btn btn-success">Descarga</a>
 							</div>

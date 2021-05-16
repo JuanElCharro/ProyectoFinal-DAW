@@ -39,9 +39,16 @@
 				<div class="row">
 					<div class="col-12">
 						<c:forEach items="${listaCategorias}" var="categorias">
-							<option class="list-group-item list-group-item" value="${categorias.id}">
-							 <h5> <span class="badge badge-primary badge-pill">${categorias.id}</span> ${categorias.descripcion}</h5>
-							 </option>
+							<c:if test="${categorias.id > 1}">
+								<option class="list-group-item list-group-item"
+									value="${categorias.id + 1}">
+									<h5>
+										<span class="badge badge-primary badge-pill">${categorias.id - 1}</span>
+										${categorias.descripcion}
+									</h5>
+								</option>
+							</c:if>
+							
 						</c:forEach>
 					</div>
 				</div>

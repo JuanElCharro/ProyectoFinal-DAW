@@ -64,6 +64,7 @@ public class AplicacionesController {
 	
 	@GetMapping(value = "buscarPrograma")
 	public String mostrarBuscarPrograma(ModelMap model) {
+		model.addAttribute("listaCategorias", combosDao.comboCategorias());
 		return "vistas/programas/buscarPrograma";
 	}
 	
@@ -76,9 +77,15 @@ public class AplicacionesController {
 			@RequestParam(value = "link_imagen", required = false) String link_imagen,
 			@RequestParam(value = "link_descarga", required = false) String link_descarga,
 			@RequestParam(value = "descripcion", required = false) String descripcion,
+			@RequestParam(value = "categorias") Integer id_categoria,
 		ModelMap model) {
 		
-		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion));
+		if (id_categoria == 1) {
+			id_categoria = null; //En caso de no elegir categoría muestra todas
+		}
+		
+		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria));
+		model.addAttribute("listaCategorias", combosDao.comboCategorias());
 		return "vistas/programas/buscarPrograma";
 	}
 	
@@ -100,7 +107,7 @@ public class AplicacionesController {
 			@RequestParam(value = "descripcion", required = false) String descripcion,
 			ModelMap model) {
 
-		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion));
+		model.addAttribute("lista", appImpl.obtenerAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, null));
 
 		return "vistas/programas/eliminarPrograma";
 	}

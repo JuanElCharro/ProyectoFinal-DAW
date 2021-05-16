@@ -44,8 +44,8 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	
 	@Override
 	public List<AplicacionesDTO> obtenerAplicacionPorNombreCategoriaLicenciaValoracion(Integer id_app, String nombre_app,
-			String version, String fecha, String link_imagen, String link_descarga, String descripcion) {
-		return aplicacionesRepository.buscarAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion);
+			String version, String fecha, String link_imagen, String link_descarga, String descripcion, Integer id_categoria) {
+		return aplicacionesRepository.buscarAplicacionPorNombreCategoriaLicenciaValoracion(id_app, nombre_app, version, fecha, link_imagen, link_descarga, descripcion, id_categoria);
 	}
 	
 	@Override

@@ -13,6 +13,14 @@ public class CategoriasDTO {
 	
 	/**
 	 * @param id_categoria
+	 */
+	public CategoriasDTO(int id_categoria) {
+		super();
+		this.id_categoria = id_categoria;
+	}
+
+	/**
+	 * @param id_categoria
 	 * @param nombre_categoria
 	 */
 	public CategoriasDTO(int id_categoria, String nombre_categoria) {

@@ -71,6 +71,31 @@ public class AplicacionesEntity {
 	}
 
 	/**
+	 * Constructor con Categorías
+	 * @param id_app
+	 * @param nombre_app
+	 * @param version
+	 * @param fecha
+	 * @param link_imagen
+	 * @param link_descarga
+	 * @param descripcion
+	 * @param categorias
+	 */
+	public AplicacionesEntity(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
+			String link_descarga, String descripcion, CategoriasEntity categorias) {
+		super();
+		this.id_app = id_app;
+		this.nombre_app = nombre_app;
+		this.version = version;
+		this.fecha = fecha;
+		this.link_imagen = link_imagen;
+		this.link_descarga = link_descarga;
+		this.descripcion = descripcion;
+		this.categorias = categorias;
+	}
+
+	/**
+	 * Constructor completo
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version
@@ -99,6 +124,7 @@ public class AplicacionesEntity {
 	}
 
 	/**
+	 * Constructor con unicamente la tabla Aplicaciones
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version
