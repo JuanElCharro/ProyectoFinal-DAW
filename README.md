@@ -18,4 +18,3 @@ He realizado cambios para el despliegue, los nombro a continuación:
 
 IMPORTANTE:
 Para ejecutar como desarrollo en local, únicamente hay que sustituir todas las direcciones por "localhost": (Ctrl+h > Reemplazar en todo el proyecto > "XX.XX.XXX.XX" por "localhost" [se puede hacer desde varios editores y desde el mismo Eclipse, en la ventana "Proyect Explorer"]) y seguir los pasos de arriba "Instrucciones rápidas para abrir el proyecto".
->>>>>>> 077b56cb9df27c003c645eafa15f34c7d495e4c5
