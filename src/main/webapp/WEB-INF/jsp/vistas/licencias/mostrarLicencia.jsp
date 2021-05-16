@@ -39,9 +39,9 @@
 				<div class="row">
 					<div class="col-12">
 						<c:forEach items="${listaLicencias}" var="licencias">
-							<option class="list-group-item list-group-item" value="${licencias.id}">
+							<div class="list-group-item list-group-item" value="${licencias.id}">
 							 <h5> <span class="badge badge-primary badge-pill">${licencias.id}</span> ${licencias.descripcion}</h5>
-							 </option>
+							 </div>
 						</c:forEach>
 					</div>
 				</div>

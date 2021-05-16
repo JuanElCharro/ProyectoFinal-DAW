@@ -40,13 +40,13 @@
 					<div class="col-12">
 						<c:forEach items="${listaCategorias}" var="categorias">
 							<c:if test="${categorias.id > 1}">
-								<option class="list-group-item list-group-item"
+								<div class="list-group-item list-group-item"
 									value="${categorias.id + 1}">
 									<h5>
 										<span class="badge badge-primary badge-pill">${categorias.id - 1}</span>
 										${categorias.descripcion}
 									</h5>
-								</option>
+								</div>
 							</c:if>
 							
 						</c:forEach>
