@@ -52,7 +52,7 @@
 						<div class="col-12">
 							<label for="nombre_app">Nombre:</label> <input type="text"
 								class="form-control" id="nombre_app" name="nombre_app"
-								placeholder="Ej: LibreOffice..." maxlength="45">
+								placeholder="Ej: LibreOffice..." maxlength="45" required>
 						</div>
 					</div>
 
@@ -60,7 +60,7 @@
 						<div class="col-6">
 							<label for="version">Version del programa:</label> <input
 								type="text" class="form-control" id="version" name="version"
-								placeholder="Ej: v3.5" maxlength="10">
+								placeholder="Ej: v3.5" maxlength="10" required>
 						</div>
 						<div class="col-6">
 							<label for="fecha">Fecha ultima version:</label> <input
@@ -78,7 +78,7 @@
 							<label for="link_descarga">Link de descarga:</label> <input
 								type="url" class="form-control" id="link_descarga"
 								name="link_descarga" placeholder="https://www...."
-								maxlength="250">
+								maxlength="250" required>
 						</div>
 					</div>
 
@@ -87,7 +87,7 @@
 							<label for="descripcion">Descripcion:</label>
 							<textarea class="form-control" name="descripcion"
 								id="descripcion" rows="3"
-								placeholder="Breve descripcion del programa..." maxlength="600"></textarea>
+								placeholder="Breve descripcion del programa..." maxlength="600" required></textarea>
 						</div>
 					</div>
 

@@ -49,7 +49,7 @@
 					<div class="row">
 						<div class="col-12">
 							<label for="nombre_categoria"></label> Nombre de la nueva categoria: <input type="text"
-								class="form-control" id="nombre_categoria" name="nombre_categoria">
+								class="form-control" id="nombre_categoria" name="nombre_categoria" required>
 						</div>
 					</div>
 

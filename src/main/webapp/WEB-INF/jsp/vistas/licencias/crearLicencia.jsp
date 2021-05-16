@@ -49,11 +49,11 @@
 					<div class="row">
 						<div class="col-lg-6 col-sm-12">
 							<label for="nombre_licencia"></label> Nombre de la nueva licencia: <input type="text"
-								class="form-control" id="nombre_licencia" name="nombre_licencia">
+								class="form-control" id="nombre_licencia" name="nombre_licencia" required>
 						</div>
 						<div class="col-lg-6 col-sm-12">
 							<label for="descripcion"></label> Link a su texto: <input type="url"
-								placeholder="Escriba la URL de la licencia..." class="form-control" id="descripcion" name="descripcion">
+								placeholder="Escriba la URL de la licencia..." class="form-control" id="descripcion" name="descripcion" required>
 						</div>
 					</div>
 
