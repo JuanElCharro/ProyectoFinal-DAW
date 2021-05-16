@@ -45,7 +45,7 @@ const app = Vue.createApp({
       setTimeout(function(){ location.reload() }, 1000);
     },
     guardar() {
-      axios.post("http://localhost:3000/lenguajes", {
+      axios.post("http://81.37.154.73:3000/lenguajes", {
         id: parseInt(this.id, 10),
         nombre: this.nombre,
         comentario: this.comentario,

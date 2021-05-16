@@ -4,21 +4,6 @@
       "id": 1,
       "nombre": "Java",
       "comentario": "Es muy utilizado"
-    },
-    {
-      "id": 2,
-      "nombre": ".NET",
-      "comentario": "Lo estoy aprendiendo"
-    },
-    {
-      "id": 3,
-      "nombre": "C",
-      "comentario": "Empecé con ese lenguaje"
-    },
-    {
-      "id": 4,
-      "nombre": ".NET",
-      "comentario": "Tarda mucho pero me gusta"
     }
   ],
   "incidencias": [
@@ -28,27 +13,6 @@
       "correo": "juan@gmail.com",
       "comentario": "Faltaría un slider del 1 al 10 para medir el grado de satisfacción.",
       "satisfaccion": "8"
-    },
-    {
-      "nombre": "Algo no funciona en la web",
-      "correo": "hola@gmail.com",
-      "comentario": "Te falta alguna cosilla, dale una vuelta.",
-      "satisfaccion": "4",
-      "id": 2
-    },
-    {
-      "nombre": "He encontrado un bug",
-      "correo": "dasda@gsfrg.com",
-      "comentario": "Me aburro jajaj",
-      "satisfaccion": "0",
-      "id": 3
-    },
-    {
-      "nombre": "Quiero recomendar un programa",
-      "correo": "hola@gmail.com",
-      "comentario": "Todo va bien :D",
-      "satisfaccion": "9",
-      "id": 4
     }
   ],
   "informacion": [
@@ -57,30 +21,6 @@
       "respuestaUtilidad": "No sabe/No contesta",
       "desarrollo": "Se hace lo que se puede, sí",
       "id": 3
-    },
-    {
-      "respuestaInfo": null,
-      "respuestaUtilidad": null,
-      "desarrollo": "Todo correcto nenu",
-      "id": 4
-    },
-    {
-      "respuestaInfo": "Info Correcta",
-      "respuestaUtilidad": "Utilidad Correcta",
-      "desarrollo": "Todo correcto x2",
-      "id": 5
-    },
-    {
-      "respuestaInfo": "Info Incorrecta",
-      "respuestaUtilidad": "No sabe/No contesta",
-      "desarrollo": "Pasan cosas",
-      "id": 6
-    },
-    {
-      "respuestaInfo": "Info Correcta",
-      "respuestaUtilidad": "Utilidad Correcta",
-      "desarrollo": "Uwu",
-      "id": 7
     }
   ]
 }

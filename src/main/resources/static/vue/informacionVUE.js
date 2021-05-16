@@ -11,7 +11,7 @@ const app = Vue.createApp({
             setTimeout(function () { location.reload() }, 1000);
         },
         guardarFormulario() {
-            axios.post("http://localhost:3000/informacion", {
+            axios.post("http://81.37.154.73:3000/informacion", {
                 respuestaInfo: this.respuestaInfo,
                 respuestaUtilidad: this.respuestaUtilidad,
                 desarrollo: this.desarrollo,

@@ -38,7 +38,7 @@
 	<div class="container" style="margin-top: 30px">
 		<div class="col-12">
 			<div class="form-group">
-				<form action="http://localhost:8080/libreApp/buscarPrograma"
+				<form action="http://81.37.154.73:8080/libreApp/buscarPrograma"
 					method="post" id="formulario">
 
 					<div class="row" hidden>
@@ -58,7 +58,7 @@
 
 					<div class="row">
 						<div class="col-6">
-							<label for="version">Version del programa:</label> <input
+							<label for="version">Version:</label> <input
 								type="text" class="form-control" id="version" name="version"
 								placeholder="Introduzca una version..." maxlength="5">
 						</div>
