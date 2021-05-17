@@ -68,13 +68,13 @@
 
 			<div class="col-sm-11 col-lg-5" id="texto-bienvenido">
 				<div class="row">
-					<h2>Cual es nuestra filosofia:</h2>
-					<p>Crear una web en la cual cada usuario pueda anadir registros
+					<h2>Nuestra intencionalidad:</h2>
+					<p>Crear una web en la cual cada usuario pueda sumar registros
 						de software con licencias libres u Open Source (GPLv2, GPLv3, CC
 						(Creative Commons), MPL (Mozilla Public License), MIT license,
-						etc), con sus correspondientes datos, informacion y registros a
-						sus URLs oficiales. Pretendiendo asi crear un espacio de
-						recopilacion para los usuarios, sean del campo profesional que
+						etc), con sus correspondientes datos, info y registros a
+						sus URLs oficiales. Pretendiendo de esta forma crear un espacio que 
+						pretende ayudar a los usuarios, sean del campo profesional que
 						sean.</p>
 					<br>
 
@@ -82,11 +82,11 @@
 					<div id="app">
 						<h2>Encuesta a programadores</h2>
 						<div class="form">
-							<label>Lenguaje de programacion favorito:</label> <select
+							<label>Lenguaje favorito:</label> <select
 								v-model="nombre">
 								<option v-for="(lenguaje, index) in lenguajes" :key="lenguaje">
 									{{lenguaje.nombre}}</option>
-							</select> <label>Breve razon de su eleccion: </label> <input
+							</select> <label>Breve respuesta de su eleccion: </label> <input
 								v-model="comentario" type="text" id="razon" name="razon"
 								placeholder="Lo mas breve posible..">
 							<button id="enviarB" v-on:click="guardar(); reload();">Enviar</button>

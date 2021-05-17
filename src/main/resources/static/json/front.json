@@ -9,6 +9,16 @@
       "id": 2,
       "nombre": "C++",
       "comentario": "Se usa para videojuegos"
+    },
+    {
+      "id": 3,
+      "nombre": null,
+      "comentario": null
+    },
+    {
+      "id": 4,
+      "nombre": "C++",
+      "comentario": "testing"
     }
   ],
   "incidencias": [
