@@ -123,8 +123,8 @@
 			<div id="tarjetasBienvenido" class="col-xl-3 col-lg-6 col-sm-12">
 				<div class="card text-white bg-info">
 					<div class="card-body">
-						<h3 class="card-title">Esta web usa solamente tecnologias
-							100% gratuitas.</h3>
+						<h3 class="card-title">Nuestra web le permite descargar
+						el programa que desee.</h3>
 					</div>
 				</div>
 			</div>
@@ -134,7 +134,7 @@
 				<div class="card text-white bg-danger">
 					<div class="card-body">
 						<h3 class="card-title">Todo el Software usado para crear la
-							web es OpenSource.</h3>
+							web tiene licencias libres u Open Source.</h3>
 					</div>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 				<div class="card text-white bg-secondary">
 					<div class="card-body">
 						<h3 class="card-title">
-							Toda la multimedia usa la licencia tipo <a
+							Toda la multimedia de la web usa la licencia del tipo <a
 								href="https://creativecommons.org/licenses/by-nd/4.0/">CC
 								BY-ND 4.0</a>
 						</h3>
@@ -156,8 +156,8 @@
 			<div id="tarjetasBienvenido" class="col-xl-3 col-lg-6 col-sm-12">
 				<div class="card text-white bg-primary">
 					<div class="card-body">
-						<h3 class="card-title">La web no guarda programas, sino
-							registros.</h3>
+						<h3 class="card-title">La web dispone de una amplia gama de aplicaciones 
+						muy diversas.</h3>
 					</div>
 				</div>
 			</div>
