@@ -37,7 +37,7 @@
 		<div class="col-12">
 			<div class="form-group">
 				<form
-					action="http://81.37.154.73:8080/libreApp/formularioEliminarPrograma"
+					action="http://localhost:8080/libreApp/formularioEliminarPrograma"
 					method="post" id="formulario">
 
 					<div class="row" hidden>
@@ -103,7 +103,7 @@
 					<c:forEach items="${lista}" var="programa">
 						<div class="col-12 col-md-6 col-lg-4">
 
-							<form action="http://81.37.154.73:8080/libreApp/eliminarPrograma"
+							<form action="http://localhost:8080/libreApp/eliminarPrograma"
 								method="post" id="formulario">
 								<div class="card bg-light border-danger"
 									style="margin-bottom: 1em;">

@@ -35,7 +35,7 @@ const app = Vue.createApp({
       setTimeout(function () { location.reload() }, 1000);
     },
     guardar() {
-      axios.post("http://81.37.154.73:3000/incidencias", {
+      axios.post("http://localhost:3000/incidencias", {
         nombre: this.nombre,
         correo: this.correo,
         comentario: this.comentario,
@@ -47,13 +47,13 @@ const app = Vue.createApp({
       this.id = id + 1;
     },
     irAgregarPrograma() {
-      window.location.replace("http://81.37.154.73:8080/libreApp/crearPrograma");
+      window.location.replace("http://localhost:8080/libreApp/crearPrograma");
     },
     irBuscarPrograma() {
-      window.location.replace("http://81.37.154.73:8080/libreApp/buscarPrograma");
+      window.location.replace("http://localhost:8080/libreApp/buscarPrograma");
     },
     irBorrarPrograma() {
-      window.location.assign("http://81.37.154.73:8080/libreApp/formularioEliminarPrograma");
+      window.location.assign("http://localhost:8080/libreApp/formularioEliminarPrograma");
     },
   },
 });

@@ -38,7 +38,7 @@
 	<div class="container" style="margin-top: 30px">
 		<div class="col-12">
 			<div class="form-group">
-				<form action="http://81.37.154.73:8080/libreApp/buscarPrograma"
+				<form action="http://localhost:8080/libreApp/buscarPrograma"
 					method="post" id="formulario">
 
 					<!-- ID rellenada por Spring, es AutoIncremental -->
