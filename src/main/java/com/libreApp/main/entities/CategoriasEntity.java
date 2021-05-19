@@ -15,6 +15,9 @@ import javax.persistence.Table;
  *
  */
 
+//- Es obligatorio el GeneratedValue en el ID, ya que al ser AutoIncremental 
+// se necesita para que Spring inserte valores, en vez del usuario.
+
 @Entity
 @Table(name = "categorias")
 public class CategoriasEntity {
@@ -27,12 +30,13 @@ public class CategoriasEntity {
 	@Column(name = "nombre_categoria")
 	private String nombre_categoria;
 	
-
+	//Constructor vacío de categorías
 	public CategoriasEntity() {
 		super();
 	}
 
 	/**
+	 * Constructor solo con ID
 	 * @param id_categoria
 	 */
 	public CategoriasEntity(Integer id_categoria) {
@@ -41,6 +45,7 @@ public class CategoriasEntity {
 	}
 
 	/**
+	 * Constructor completo
 	 * @param id_categoria
 	 * @param nombre_categoria
 	 */

@@ -13,6 +13,7 @@ public class LicenciasDTO {
 	private String descripcion;
 	
 	/**
+	 * Constructor completo de Licencia
 	 * @param id_licencia
 	 * @param nombre_licencia
 	 * @param descripcion

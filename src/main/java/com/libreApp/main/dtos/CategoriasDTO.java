@@ -12,6 +12,7 @@ public class CategoriasDTO {
 	private String nombre_categoria;
 	
 	/**
+	 * Constructor solo con el ID de categoría
 	 * @param id_categoria
 	 */
 	public CategoriasDTO(int id_categoria) {
@@ -20,6 +21,7 @@ public class CategoriasDTO {
 	}
 
 	/**
+	 * Constructor completo de categoría
 	 * @param id_categoria
 	 * @param nombre_categoria
 	 */

@@ -15,5 +15,5 @@ import com.libreApp.main.entities.CategoriasEntity;
 
 @Repository
 public interface CategoriasRepository extends CrudRepository<CategoriasEntity, Integer>{
-
+	//El CrudRepository de Spring automatiza los accesos a esta interfaz, no es necesario código.
 }

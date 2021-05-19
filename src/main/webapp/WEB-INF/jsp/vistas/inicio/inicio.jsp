@@ -111,7 +111,7 @@
 								</div>
 								<hr>
 
-								<!-- VUE -->
+								<!-- CODIGO VUE, lo controla informacionVUE.js -->
 								<div id="app">
 									<h2>Calidad</h2>
 									<h5>Valore la info mostrada en la web e indique lo que
@@ -143,7 +143,7 @@
 										placeholder="Desarrolle el/los problemas..."></textarea>
 									<button id="enviarB" v-on:click="guardarFormulario(); reload();">Enviar</button>
 								</div>
-								<!-- VUE -->
+								<!-- CODIGO VUE FINALIZA -->
 								<br>
 
 							</div>

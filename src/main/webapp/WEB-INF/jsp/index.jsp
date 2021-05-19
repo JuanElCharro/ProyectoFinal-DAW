@@ -34,6 +34,7 @@
 </head>
 
 <body>
+	<!-- Por defecto siempre estará la web de Bienvenido, tiene opción en el Menú, pero también la carga el index.jsp -->
 	<%@include file="../jsp/vistas/inicio/bienvenido.jsp"%>
 </body>
 

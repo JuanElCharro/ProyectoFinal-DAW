@@ -46,6 +46,7 @@
 						</div>
 					</div>
 
+					<!-- Formulario visible -->
 					<div class="row">
 						<div class="col-lg-6 col-sm-12">
 							<label for="nombre_licencia"></label> Nombre de la nueva licencia: <input type="text"
@@ -61,6 +62,7 @@
 						value="Insertar">
 				</form>
 				<hr>
+				<!-- En caso de insertar -->
 				<c:if test="${resultado == 1}">
 					<div id="tarjetasBienvenido" class="col-12">
 						<div class="card text-white bg-success">

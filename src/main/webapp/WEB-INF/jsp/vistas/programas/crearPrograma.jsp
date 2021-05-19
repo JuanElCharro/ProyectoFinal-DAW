@@ -41,6 +41,7 @@
 				<form action="http://81.37.154.73:8080/libreApp/crearPrograma"
 					method="post" id="formulario">
 
+					<!-- ID rellenada por Spring, es AutoIncremental -->
 					<div class="row" hidden>
 						<div class="col-12">
 							<label for="id_app"></label> <input type="text"
@@ -48,6 +49,7 @@
 						</div>
 					</div>
 
+					<!-- Datos del formulario pedidos al usuario -->
 					<div class="row">
 						<div class="col-12">
 							<label for="nombre_app">Nombre:</label> <input type="text"
@@ -126,6 +128,8 @@
 						value="Insertar">
 				</form>
 				<hr>
+
+				<!-- Si los datos son correctos mostrará una card con la confimación -->
 				<c:if test="${resultado == 1}">
 					<div id="tarjetasBienvenido" class="col-12">
 						<div class="card text-white bg-success">

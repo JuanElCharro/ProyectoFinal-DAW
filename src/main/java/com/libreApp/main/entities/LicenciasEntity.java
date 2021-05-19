@@ -15,6 +15,9 @@ import javax.persistence.Table;
  *
  */
 
+//- Es obligatorio el GeneratedValue en el ID, ya que al ser AutoIncremental 
+//se necesita para que Spring inserte valores, en vez del usuario.
+
 @Entity
 @Table(name = "licencias")
 public class LicenciasEntity {
@@ -30,11 +33,13 @@ public class LicenciasEntity {
 	@Column(name = "descripcion")
 	private String descripcion;
 
+	//Constructor vacío de Licencias
 	public LicenciasEntity() {
 		super();
 	}
 
 	/**
+	 * Constructor completo de Licencias
 	 * @param id_licencia
 	 * @param nombre_licencia
 	 * @param descripcion

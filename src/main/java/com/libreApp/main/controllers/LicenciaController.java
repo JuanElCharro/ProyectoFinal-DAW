@@ -26,7 +26,7 @@ public class LicenciaController {
 	@Autowired
 	private CombosDAO combosDao;
 	
-	//Crear Categoría
+	//Crear Licencia
 	
 	@GetMapping(value = "crearLicencias")
 	public String mostrarCrearCategoria(ModelMap model) {
@@ -45,7 +45,7 @@ public class LicenciaController {
 		return "vistas/licencias/crearLicencia";
 	}
 	
-	//Mostrar Categorias
+	//Mostrar Licencia
 	
 	@GetMapping(value = "mostrarLicencia")
 	public String mostrarFormularioEliminarCategoria(ModelMap model) {

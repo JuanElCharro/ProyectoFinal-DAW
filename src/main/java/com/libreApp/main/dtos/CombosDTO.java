@@ -12,6 +12,7 @@ public class CombosDTO {
 	private String descripcion;
 	
 	/**
+	 * Constructor completo para los campos ID y Nombre de los combos
 	 * @param id
 	 * @param descripcion
 	 */

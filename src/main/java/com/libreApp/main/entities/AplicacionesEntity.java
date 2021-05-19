@@ -19,6 +19,14 @@ import javax.persistence.Table;
  *
  */
 
+/* 
+   - Es obligatorio el GeneratedValue en el ID, ya que al ser AutoIncremental 
+   se necesita para que Spring inserte valores, en vez del usuario.
+   
+   - También se necesita el ManyToOne en los Join de las otras tablas, para
+   que al borrar una aplicación lo haga en cascada.
+*/
+
 @Entity
 @Table(name = "aplicaciones")
 public class AplicacionesEntity {
@@ -58,11 +66,13 @@ public class AplicacionesEntity {
 	@JoinColumn(name = "id_valoracion")
 	private ValoracionesEntity valoraciones;
 
+	//Constructor vacío de Aplicaciones
 	public AplicacionesEntity() {
 		super();
 	}
 
 	/**
+	 * Constructor con el ID de Aplicaciones
 	 * @param id_app
 	 */
 	public AplicacionesEntity(Integer id_app) {
@@ -71,7 +81,7 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * Constructor con Categorías
+	 * Constructor de Aplicaciones con Categorías
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version
@@ -95,7 +105,7 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * Constructor completo
+	 * Constructor completo de Aplicaciones
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version
@@ -124,7 +134,7 @@ public class AplicacionesEntity {
 	}
 
 	/**
-	 * Constructor con unicamente la tabla Aplicaciones
+	 * Constructor con unicamente la tabla Aplicaciones, sin los Join
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version

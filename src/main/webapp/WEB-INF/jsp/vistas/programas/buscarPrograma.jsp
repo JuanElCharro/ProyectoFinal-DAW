@@ -41,6 +41,7 @@
 				<form action="http://81.37.154.73:8080/libreApp/buscarPrograma"
 					method="post" id="formulario">
 
+					<!-- ID rellenada por Spring, es AutoIncremental -->
 					<div class="row" hidden>
 						<div class="col-12">
 							<label for="id_app"></label> <input type="text"
@@ -48,6 +49,7 @@
 						</div>
 					</div>
 
+					<!-- Formulario visible -->
 					<div class="row">
 						<div class="col-12">
 							<label for="nombre_app">Nombre:</label> <input type="text"
@@ -92,6 +94,7 @@
 						</div>
 					</div>
 					
+					<!-- Formulario visible -->
 					<div class="row">
 						<div class="col-12">
 							<label for="categorias">Categoria de la App:</label>

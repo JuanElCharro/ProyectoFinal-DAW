@@ -78,7 +78,7 @@
 						sean.</p>
 					<br>
 
-					<!-- VUE -->
+					<!-- CODIGO VUE, lo controla encuestaVUE.js -->
 					<div id="app">
 						<h2>Encuesta a programadores</h2>
 						<div class="form">
@@ -95,7 +95,7 @@
 					<script>
                                 app.mount("#app");
                             </script>
-					<!-- VUE -->
+					<!-- FIN DE CODIGO VUE -->
 
 				</div>
 			</div>

@@ -23,6 +23,7 @@ public class CategoriasDAOimpl implements CategoriasDAO{
 
 	@Override
 	public Integer insertarCategoria(Integer id_categoria, String nombre_categoria) {
+		//Creamos un objeto de tipo categoría
 		CategoriasEntity categ = new CategoriasEntity(id_categoria, nombre_categoria);
 
 		//Guardamos el objeto

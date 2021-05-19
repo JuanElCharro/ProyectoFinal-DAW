@@ -136,7 +136,7 @@
 			</div>
 
 			<div class="col-sm-12 col-lg-7">
-				<!-- VUE -->
+				<!-- CODIGO VUE, lo controla incidenciasVUE.js -->
 				<div>
 					<h2>Incidencias</h2>
 					<div class="form">
@@ -158,7 +158,7 @@
 					</div>
 				</div>
 
-				<!-- VUE -->
+				<!-- FIN DEL CODIGO VUE -->
 			</div>
 			<br>
 		</div>

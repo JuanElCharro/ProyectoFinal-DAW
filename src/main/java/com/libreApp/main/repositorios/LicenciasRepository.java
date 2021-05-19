@@ -15,5 +15,5 @@ import com.libreApp.main.entities.LicenciasEntity;
 
 @Repository
 public interface LicenciasRepository extends CrudRepository<LicenciasEntity, Integer>{
-	
+	//El CrudRepository de Spring automatiza los accesos a esta interfaz, no es necesario código.
 }

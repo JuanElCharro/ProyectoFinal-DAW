@@ -14,7 +14,8 @@ import com.libreApp.main.entities.AplicacionesEntity;
 
 /**
  * @author Juan
- *
+ * 
+ * Consulta SQL que busca las Aplicaciones en la BBDD
  */
 
 @Repository

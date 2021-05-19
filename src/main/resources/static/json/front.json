@@ -4,23 +4,41 @@
       "id": 1,
       "nombre": "Java",
       "comentario": "Es muy utilizado"
+    },
+    {
+      "id": 2,
+      "nombre": ".NET",
+      "comentario": "Lo estoy aprendiendo ahora"
     }
   ],
   "incidencias": [
     {
-      "id": 1,
-      "nombre": "Sugerencia o peticion",
-      "correo": "juan@gmail.com",
-      "comentario": "Faltaría un slider del 1 al 10 para medir el grado de satisfacción.",
-      "satisfaccion": "8"
+      "nombre": "Quiero recomendar un programa",
+      "correo": "personaleatoria@email.com",
+      "comentario": "Deberías incluir el Code::Blocks.",
+      "satisfaccion": "8",
+      "id": 1
+    },
+    {
+      "nombre": "Otro",
+      "correo": "Luis45@email.com",
+      "comentario": "¡Me encanta tu web!",
+      "satisfaccion": "10",
+      "id": 2
     }
   ],
   "informacion": [
     {
-      "respuestaInfo": "Info Incorrecta",
-      "respuestaUtilidad": "No sabe/No contesta",
-      "desarrollo": "Se hace lo que se puede, sí",
-      "id": 3
+      "respuestaInfo": "Info Correcta",
+      "respuestaUtilidad": "Utilidad Correcta",
+      "desarrollo": "Me encanta, ¡gracias!",
+      "id": 1
+    },
+    {
+      "respuestaInfo": "No sabe/No contesta",
+      "respuestaUtilidad": "Utilidad Correcta",
+      "desarrollo": "Gracias por la info.",
+      "id": 2
     }
   ]
 }

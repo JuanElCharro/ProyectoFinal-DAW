@@ -34,6 +34,8 @@ public class CombosDAOimpl implements CombosDAO{
 	
 	@Autowired
 	private ValoracionesRepository valoracionesRepository; 
+	
+	//Obtener las listas de los elementos de cada entidad
 
 	@Override
 	public List<CombosDTO> comboLicencias() {
@@ -56,7 +58,7 @@ public class CombosDAOimpl implements CombosDAO{
 		return listaValoraciones;
 	}
 	
-	//Recoger solo algunos campos
+	//Recoger solo los campos que necesitamos
 	
 	private List<CombosDTO> mapeoEntidadLicenciasComboDTO(Iterable<LicenciasEntity> lista){
 		List<CombosDTO> listaLicencias = new ArrayList<CombosDTO>();

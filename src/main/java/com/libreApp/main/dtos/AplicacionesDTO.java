@@ -20,6 +20,7 @@ public class AplicacionesDTO {
 	private int id_valoracion;
 	
 	/**
+	 * Constructor sin campos Licencia y Valoración
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version
@@ -43,6 +44,7 @@ public class AplicacionesDTO {
 	}
 
 	/**
+	 * Constructor Completo de Aplicación
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version
@@ -70,6 +72,7 @@ public class AplicacionesDTO {
 	}
 
 	/**
+	 * Constructor sin Categoría, Licencia ni Valoración
 	 * @param id_app
 	 * @param nombre_app
 	 * @param version

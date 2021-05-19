@@ -52,6 +52,7 @@ public class AplicacionesDAOimpl implements AplicacionesDAO {
 	public Integer insertarAplicacion(Integer id_app, String nombre_app, String version, String fecha, String link_imagen,
 			String link_descarga, String descripcion, Integer id_categoria, Integer id_licencia, Integer id_valoracion) {
 		
+		//Si entra el valor vacío en la fecha
 		if (fecha == "") {
 			Date cDate = new Date();
 		    fecha = new SimpleDateFormat("yyyy-MM-dd").format(cDate);

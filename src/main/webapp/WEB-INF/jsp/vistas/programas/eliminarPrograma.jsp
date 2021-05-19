@@ -47,6 +47,7 @@
 						</div>
 					</div>
 
+					<!-- Nombre necesario para la búsqueda -->
 					<div class="row">
 						<div class="col-12">
 							<label for="nombre_app">Nombre:</label> <input type="text"
@@ -56,6 +57,7 @@
 						</div>
 					</div>
 
+					<!-- Elementos ocultos que recogen el resto de datos -->
 					<div class="row" hidden>
 						<div class="col-6">
 							<label for="version">Version del programa:</label> <input
@@ -96,6 +98,7 @@
 				</form>
 				<hr>
 
+				<!-- Bucle que muestra las tarjetas de cada programa -->
 				<div class="row">
 					<c:forEach items="${lista}" var="programa">
 						<div class="col-12 col-md-6 col-lg-4">
@@ -135,6 +138,7 @@
 					<hr>
 				</div>
 
+				<!-- Card mostrada en caso de eliminación correcta -->
 				<c:if test="${resultado == 1}">
 					<div id="tarjetasBienvenido" class="col-12">
 						<div class="card text-white bg-danger">

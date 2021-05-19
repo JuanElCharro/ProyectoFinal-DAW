@@ -11,11 +11,13 @@ public class ValoracionesDTO {
 	private int id_valoracion;
 	private String valores;
 
+	//Constructor vacío de valoraciones
 	public ValoracionesDTO() {
 		super();
 	}
 
 	/**
+	 * Constructor completo de valoraciones
 	 * @param id_valoracion
 	 * @param valores
 	 */

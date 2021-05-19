@@ -13,6 +13,9 @@ import javax.persistence.Table;
  *
  */
 
+//- No es necesario el GeneratedValue en el ID, puesto que las valoraciones
+//son fijas y ya vienen dadas por la Base de Datos.
+
 @Entity
 @Table(name = "valoraciones")
 public class ValoracionesEntity {
@@ -24,11 +27,13 @@ public class ValoracionesEntity {
 	@Column(name = "valores")
 	private String valores;
 
+	//Constructor vacío
 	public ValoracionesEntity() {
 		super();
 	}
 
 	/**
+	 * Constructor completo de valoraciones
 	 * @param id_valoracion
 	 * @param valores
 	 */

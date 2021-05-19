@@ -23,6 +23,7 @@ public class LicenciasDAOimpl implements LicenciasDAO{
 
 	@Override
 	public Integer insertarLicencia(Integer id_licencia, String nombre_licencia, String descripcion) {
+		//Creamos un objeto tipo Licencia de la entidad Licencias con los campos recibidos
 		LicenciasEntity categ = new LicenciasEntity(id_licencia, nombre_licencia, descripcion);
 
 		//Guardamos el objeto
